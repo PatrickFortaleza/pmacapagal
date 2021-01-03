@@ -1,6 +1,38 @@
 header {
+  transition: .2s ease-in-out;
   border-bottom: 1px solid $offblack;
+  background: $blackdim;
   z-index: 500;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  @media screen and (min-width: 969px){
+    &.active {
+      h1.logo {
+        transition: all .5s ease-in-out;
+        font-size: 24px !important;
+      }
+      h2.logo {
+        transition: all .5s ease-in-out;
+        font-size: 14px !important;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1114px){
+    &.active {
+      h1.logo {
+        transition: all .5s ease-in-out;
+        font-size: 30px !important;
+      }
+      h2.logo {
+        transition: all .5s ease-in-out;
+        font-size: 17px !important;
+      }
+    }
+  }
 }
 
 .pseudoHeader {

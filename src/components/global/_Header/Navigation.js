@@ -31,7 +31,7 @@ export default function Navigation(props) {
               onMouseEnter={setHoverOn}
               onMouseLeave={setHoverOff}
             >
-              <button onClick={setClick}>FILM <div className="svg-cont"><TriangleIcon /></div></button>
+              <button onClick={setClick}>FILM <div className="svg-cont triangle"><TriangleIcon /></div></button>
               <ul className={toggleSubMenu ? 'active' : null}>
                 <li style={{transitionDelay: `${baseDelay * 2}s`}}><Link to="/film/shorts">SHORTS</Link></li>
                 <li style={{transitionDelay: `${baseDelay * 3}s`}}><Link to="/film/documentaries">DOCUMENTARIES</Link></li>

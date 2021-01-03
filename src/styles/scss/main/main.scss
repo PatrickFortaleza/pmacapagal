@@ -27,3 +27,21 @@
 /*--------------------------------------------------------------
 # Pages
 --------------------------------------------------------------*/
+
+
+main {
+  min-height: 100vh;
+  padding-top: 66px;
+
+  @media screen and (min-width: 767px){
+    padding-top: 77px;
+  }
+
+  @media screen and (min-width: 969px){
+    padding-top: 100px;
+  }
+
+  @media screen and (min-width: 1114px){
+    padding-top: 106px;
+  }
+}

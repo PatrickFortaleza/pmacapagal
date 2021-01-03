@@ -75,6 +75,7 @@
 # HEADINGS
 ------------------------------------------------*/
 * h1.logo {
+  transition: all .5s ease-in-out;
   @include heading-regular;
   text-transform: uppercase;
   font-size: 17px;
@@ -97,6 +98,7 @@
 }
 
 * h2.logo.sub{
+  transition: all .5s ease-in-out;
   @include body-regular;
   text-transform: uppercase;
   font-size: 12px;
