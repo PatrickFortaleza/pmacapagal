@@ -1,12 +1,20 @@
 .Navigation {
   position: fixed;
-  top: 0;
+  top: 68px;
   left: 0;
   background: $blackdim;
-  height: 100%;
+  height: calc(100% - 68px);
   width: 100%;
   z-index: 300;
-  padding-top: 76px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 0;
+  overflow: hidden;
+
+  &.active {
+    max-height: 100% !important;
+  }
 
 
   ul li {
@@ -25,6 +33,45 @@
 
     li a {
       color: white;
+    }
+  }
+}
+
+.NavFooter {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 17px;
+
+  ul {
+    display: flex;
+
+    li {
+      margin-right: 17px;
+    }
+
+    svg {
+      fill: white;
+      height: 18px;
+    }
+
+    a:hover > svg,
+    a:focus > svg,
+    a:active > svg {
+      fill: $grey;
+    } 
+  }
+
+  .NavFooter__meta p{
+    text-align: left;
+
+    a {
+      color: white;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $grey;
+      }
     }
   }
 }

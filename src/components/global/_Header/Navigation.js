@@ -1,5 +1,6 @@
 import React from 'react'
 import Section from '../../entity/Section'
+import NavFooter from './NavFooter';
 import { Link } from 'react-router-dom';
 
 export default function Navigation() {
@@ -23,6 +24,7 @@ export default function Navigation() {
           </ul>
         </nav>
       </Section>
+      <NavFooter />
     </div>
   )
 }
