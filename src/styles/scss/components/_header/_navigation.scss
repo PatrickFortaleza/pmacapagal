@@ -13,12 +13,6 @@
   overflow: hidden;
   transition: max-height .2s ease-in-out;
 
-  &.active {
-    max-height: 100% !important;
-    opacity: 1;
-  }
-
-
   ul li {
     text-align: right;
     margin: 17px 0;
@@ -34,8 +28,28 @@
     border-right: 3px solid $goldenrod;
     padding-right: 20px;
 
+    li {
+      opacity: 0;
+    }
+
     li a {
       color: white;
+    }
+  }
+
+  // ACTIVE STYLES - NAVIGATION
+  
+  &.active {
+    max-height: 100% !important;
+    opacity: 1;
+
+    ul li {
+      opacity: 1 !important;
+      transition: .2s ease-in-out;
+    }
+
+    ul li.has-submenu ul li {
+      opacity: 1 !important;
     }
   }
 }
