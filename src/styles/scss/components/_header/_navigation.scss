@@ -152,6 +152,10 @@
         font-size: 17px;
         margin-left: 20px;
 
+        @media screen and (min-width: 1114px){
+          margin-left: 40px;
+        }
+
         a {
           color: $white;
         }
@@ -166,7 +170,7 @@
             transform: rotate(0deg);
           }
         }
-        
+
         ul {
           transform: translateY(15px);
           opacity: 0;
