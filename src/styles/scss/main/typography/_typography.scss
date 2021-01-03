@@ -1,0 +1,137 @@
+@import '../colors';
+@import './fonts';
+
+
+/*----------------------------------------------
+# NAVIGATION UL
+------------------------------------------------*/
+* nav.main ul li {
+  font-size: 24px;
+  @include body-regular;
+  text-transform: uppercase;
+  color: white;
+  line-height: 1.2em;
+
+  @media screen and (min-width: 969px){
+    font-size: 20px;
+  }
+
+  &.has-submenu ul li{
+    @include body-regular;
+    text-transform: uppercase;
+    font-size: 17px;
+
+    @media screen and (min-width: 969px){
+      font-size: 20px;
+    }
+  }
+}
+
+
+/*----------------------------------------------
+# LABELS
+------------------------------------------------*/
+
+//  DEFAULT LABEL
+* h3.label {
+  @include body-regular;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: white;
+  line-height: 1.2em;
+
+  @media screen and (min-width: 969px){
+    font-size: 21px;
+  }
+}
+
+// BOLD LABEL -- FOR SINGLE FILM STUDY CREDITS
+* h3.label.bold {
+  @include body-bold;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: white;
+  line-height: 1.2em;
+
+  @media screen and (min-width: 969px){
+    font-size: 21px;
+  }
+}
+
+// TAB LABELS
+* h3.label.tab {
+  @include body-regular;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: white;
+  line-height: 1.2em;
+
+  @media screen and (min-width: 969px){
+    font-size: 21px;
+  }
+}
+
+/*----------------------------------------------
+# HEADINGS
+------------------------------------------------*/
+* h1.logo {
+  @include heading-regular;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: white;
+  line-height: 1.2em;
+
+  @media screen and (min-width: 767px){
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: 969px){
+    font-size: 45px;
+  }
+}
+
+* h2.logo.sub{
+  @include body-regular;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: white;
+  line-height: 1.2em;
+
+  @media screen and (min-width: 767px){
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 969px){
+    font-size: 27px;
+  }
+}
+
+* h2.title {
+  @include heading-regular;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: white;
+  line-height: 1.2em;
+
+  @media screen and (min-width: 969px){
+    font-size: 24px;
+  }
+}
+
+/*----------------------------------------------
+# PARAGRAPHS
+------------------------------------------------*/
+
+* p {
+  @include body-regular;
+  line-height: 1.4em;
+  color: white;
+  font-size: 17px;
+}
+
+* p.mime {
+  @include body-regular;
+  line-height: 1.4em;
+  color: white;
+  font-size: 14px;
+}
