@@ -8,8 +8,6 @@ export default function Header() {
   const [toggleMenu, toggle] = useState(() => { return false })
 
   const willToggle = (childData) => {
-    console.log('willToggle fired')
-    console.log(childData)
     toggle(childData)
   }
 

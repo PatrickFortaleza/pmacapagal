@@ -3,9 +3,10 @@ import Section from '../../entity/Section'
 import NavFooter from './NavFooter';
 import { Link } from 'react-router-dom';
 
-export default function Navigation() {
+export default function Navigation(props) {
+  const toggleMenu = props.toggle
   return (
-    <div className="Navigation">
+    <div className={ toggleMenu ? "Navigation active" : "Navigation"}>
       <Section>
         <nav className="main">
           <ul>
