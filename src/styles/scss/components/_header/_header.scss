@@ -1,0 +1,10 @@
+header {
+  border-bottom: 1px solid $offblack;
+}
+
+.pseudoHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 0;
+}
