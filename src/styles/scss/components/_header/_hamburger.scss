@@ -12,10 +12,11 @@
   display: block;
   grid-area: header-top-right;
   justify-self: end;
-  margin-right: 15px;
   margin-left: unset;
+  margin-right: 0;
   padding-top: 3px;
   padding-bottom: 3px;
+  z-index: 500;
 
   @media screen and (min-width: 767px){
       display: none;

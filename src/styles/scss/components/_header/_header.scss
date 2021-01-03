@@ -1,5 +1,6 @@
 header {
   border-bottom: 1px solid $offblack;
+  z-index: 500;
 }
 
 .pseudoHeader {
@@ -7,4 +8,5 @@ header {
   flex-direction: row;
   justify-content: space-between;
   padding: 15px 0;
+  z-index: 500;
 }

@@ -1,0 +1,30 @@
+.Navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $blackdim;
+  height: 100%;
+  width: 100%;
+  z-index: 300;
+  padding-top: 76px;
+
+
+  ul li {
+    text-align: right;
+    margin: 17px 0;
+  }
+
+  ul li a,
+  ul li button {
+    color: $offgrey;
+  }
+
+  ul li.has-submenu ul {
+    border-right: 3px solid $goldenrod;
+    padding-right: 20px;
+
+    li a {
+      color: white;
+    }
+  }
+}

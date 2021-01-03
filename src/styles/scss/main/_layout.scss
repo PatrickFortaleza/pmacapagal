@@ -50,3 +50,12 @@ section.full{
       flex: 1;
   }
 }
+
+// -----------------------------------------//
+// VERTICALLY CENTRE SVGs
+// -----------------------------------------//
+.svg-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
