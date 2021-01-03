@@ -3,11 +3,22 @@ import ReactDOM from 'react-dom';
 import './styles/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+// Wrap this around app to force the window to scroll to the top on new route.
+import ScrollTop from './components/entity/ScrollTop'
+
+const history = createBrowserHistory();
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router history={history}>
+    <React.StrictMode>
+      <ScrollTop>
+        <App />
+      </ScrollTop>
+    </React.StrictMode>
+  </Router>
+  ,
   document.getElementById('root')
 );
 
