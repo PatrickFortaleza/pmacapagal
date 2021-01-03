@@ -75,34 +75,47 @@
 # HEADINGS
 ------------------------------------------------*/
 * h1.logo {
+  transition: all .5s ease-in-out;
   @include heading-regular;
   text-transform: uppercase;
   font-size: 17px;
   color: white;
   line-height: 1.2em;
+  letter-spacing: 0.075em;
+  margin: 0;
 
   @media screen and (min-width: 767px){
     font-size: 24px;
   }
 
   @media screen and (min-width: 969px){
-    font-size: 45px;
+    font-size: 30px;
+  }
+
+  @media screen and (min-width: 1114px){
+    font-size: 40px;
   }
 }
 
 * h2.logo.sub{
+  transition: all .5s ease-in-out;
   @include body-regular;
   text-transform: uppercase;
   font-size: 12px;
   color: white;
   line-height: 1.2em;
+  letter-spacing: 0.075em;
 
   @media screen and (min-width: 767px){
     font-size: 14px;
   }
 
   @media screen and (min-width: 969px){
-    font-size: 27px;
+    font-size: 17px;
+  }
+
+  @media screen and (min-width: 1114px){
+    font-size: 21px;
   }
 }
 
@@ -114,7 +127,7 @@
   line-height: 1.2em;
 
   @media screen and (min-width: 969px){
-    font-size: 24px;
+    font-size: 30px;
   }
 }
 
@@ -131,7 +144,21 @@
 
 * p.mime {
   @include body-regular;
-  line-height: 1.4em;
+  line-height: 1.75em;
   color: white;
   font-size: 14px;
+}
+
+/*----------------------------------------------
+# ANCHORS
+------------------------------------------------*/
+
+
+* a {
+  transition: .2s ease-in-out;
+}
+* a:hover,
+* a:focus,
+* a:active {
+  filter:brightness(50%);
 }
