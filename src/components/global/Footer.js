@@ -12,8 +12,10 @@ export default function Footer() {
           <div className="Footer__meta">
             <p className="mime">PATRICIA MACAPAGAL &copy; {year}</p>
           </div>
+        <div className="vc">
+          <SocialNav />
         </div>
-        <SocialNav />
+        </div>
       </Section>
     </footer>
   )
