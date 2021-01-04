@@ -1,16 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-export default function Featured() {
+export default function Featured(props) {
+  const { film } = props
   return (
-    <Link to="/filmstudy/the-midnight-sweethearts">
+    <Link to={`/filmstudy/${film.slug}`}>
       <div className="Featured">
         <ul className="Featured__film">
-          <li><img src="https://pmacapagal-assets.s3-us-west-2.amazonaws.com/themidnightsweethearts-01.png" alt=""/></li>
-          <li><img src="https://pmacapagal-assets.s3-us-west-2.amazonaws.com/themidnightsweethearts-02.png" alt=""/></li>
-          <li><img src="https://pmacapagal-assets.s3-us-west-2.amazonaws.com/themidnightsweethearts-03.png" alt=""/></li>
+          {
+            film.stills.map((fs, index) => {
+              return (
+                <li key={index}><img src={fs.url} alt={fs.alt}/></li>
+              )
+            })
+          }
         </ul>
-        <p className="Featured__title"><Link to="/filmstudy/the-midnight-sweethearts">The Midnight Sweethearts</Link></p>
+        <p className="Featured__title">{film.title}</p>
       </div>
     </Link>
   )

@@ -1,5 +1,5 @@
 .Featured {
-  margin-top: 30px;
+  margin-top: 40px;
 
   .Featured__film {
     width: 100%;
@@ -28,7 +28,7 @@
     img {
       width: 100%;
       transition: .2s ease-in-out;
-      
+
       &:hover,
       &:focus {
         filter: brightness(1.5)
