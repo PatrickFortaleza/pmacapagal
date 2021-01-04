@@ -1,0 +1,35 @@
+.Footer {
+  padding: 15px 0;
+
+  @media screen and (min-width: 767px){
+    padding: 24px 0;
+  }
+
+  @media screen and (min-width: 969px){
+    padding: 40px 0;
+  }
+
+  .Footer__meta p {
+    text-align: left;
+  }
+
+  .Footer__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .Footer__meta {
+      margin-right: 15px;
+    }
+
+    .SocialNav {
+      justify-content: flex-end;
+
+      li {
+        margin-right: 0;
+        margin-left: 17px;
+      }
+    }
+  }
+} 
+

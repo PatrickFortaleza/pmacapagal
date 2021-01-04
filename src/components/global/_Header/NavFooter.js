@@ -1,7 +1,6 @@
 import React from 'react'
-import { PlaneIcon, YoutubeIcon, InstagramIcon } from '../../icons'
 import Section from '../../entity/Section'
-import { Link } from 'react-router-dom';
+import SocialNav from '../SocialNav'
 
 export default function NavFooter() {
   const date = new Date();
@@ -9,11 +8,7 @@ export default function NavFooter() {
   return (
     <Section>
       <div className="NavFooter">
-        <ul>
-          <li><a href="#"><div className="svg-cont"><PlaneIcon /></div></a></li>
-          <li><a href="#"><div className="svg-cont"><YoutubeIcon /></div></a></li>
-          <li><a href="#"><div className="svg-cont"><InstagramIcon /></div></a></li>
-        </ul>
+        <SocialNav />
         <div className="NavFooter__meta">
           <p className="mime">PATRICIA MACAPAGAL &copy; {year}</p>
           <p className="mime"><a href="mailto:ptmacapagal@gmail.com">ptmacapagal@gmail.com</a></p>

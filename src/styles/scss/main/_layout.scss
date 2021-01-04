@@ -52,9 +52,10 @@ section.full{
 }
 
 // -----------------------------------------//
-// VERTICALLY CENTRE SVGs
+// VERTICALLY CENTRE
 // -----------------------------------------//
-.svg-cont {
+.svg-cont,
+.vc {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
