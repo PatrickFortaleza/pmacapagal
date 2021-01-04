@@ -1,0 +1,48 @@
+.Featured {
+  margin-top: 30px;
+
+  .Featured__film {
+    width: 100%;
+    display: flex;
+
+    li {
+      flex: 1;
+    }
+
+    li:nth-last-child(-n + 2) {
+      display: none;
+    }
+
+    @media screen and (min-width: 575px){
+      li:nth-child(-n + 2) {
+        display: block;
+      }
+    }
+
+    @media screen and (min-width: 969px){
+      li:nth-child(-n + 3) {
+        display: block;
+      }
+    }
+
+    img {
+      width: 100%;
+      transition: .2s ease-in-out;
+      
+      &:hover,
+      &:focus {
+        filter: brightness(1.5)
+      }
+    }
+  }
+
+  .Featured__title {
+    text-align: left;
+    text-transform: uppercase;
+    margin: 10px 0;
+
+    a {
+      color: $white;
+    }
+  }
+}

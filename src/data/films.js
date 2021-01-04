@@ -2,6 +2,7 @@ export const films = [
   {
     title: 'The Midnight Sweethearts',
     category: 'short',
+    featured: true,
     id: 1,
     slug: 'the-midnight-sweethearts',
     stills: [
@@ -26,6 +27,7 @@ export const films = [
   {
     title: 'Risky Biscuits',
     category: 'short',
+    featured: true,
     id: 2,
     slug: 'risky-biscuits',
     stills: [
@@ -50,6 +52,7 @@ export const films = [
   {
     title: 'Specula',
     category: 'short',
+    featured: true,
     id: 3,
     slug: 'specula',
     stills: [
@@ -74,6 +77,7 @@ export const films = [
   {
     title: 'Immanuel Part III',
     category: 'short',
+    featured: true,
     id: 4,
     slug: 'immanuuel-part-3',
     stills: [
@@ -98,6 +102,7 @@ export const films = [
   {
     title: 'Immanuel Part II',
     category: 'short',
+    featured: true,
     id: 5,
     slug: 'immanuuel-part-2',
     stills: [
