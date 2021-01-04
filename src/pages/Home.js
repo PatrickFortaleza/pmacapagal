@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Section from '../components/entity/Section'
 import Featured from '../components/films/Featured'
 import CubePreloader from '../components/entity/CubePreloader'
@@ -9,16 +9,10 @@ export default function Home() {
   const [loaded, upLoadCounter] = useState(() => { return false })
 
   const incrementLoadCounter = () => {
-    console.log('load notif sent to home')
-    upLoadCounter(true)
+    setTimeout(() => {
+      upLoadCounter(true)
+    }, 200)
   }
-
-  useEffect(() => {
-    if(loaded === true){
-      console.log('all has loaded')
-    }
-  }, [loaded])
-  
 
   return (
     <div>
@@ -29,7 +23,13 @@ export default function Home() {
         {
           featured.map((f, index) => {
             return (
-              <Featured film={f} key={index} notifyLoad={index === featured.length - 1 ? incrementLoadCounter : false}/>
+              <Featured 
+                film={f} 
+                key={index} 
+                hasLoaded={loaded}
+                baseDelay={(index + 1) * 0.25} 
+                notifyLoad={index === featured.length - 1 ? incrementLoadCounter : false}
+              />
             )
           })
         }
