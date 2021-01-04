@@ -1,6 +1,7 @@
 import React from 'react'
 import Section from '../components/entity/Section'
 import Featured from '../components/films/Featured'
+import CubePreloader from '../components/entity/CubePreloader'
 import { films } from '../data/films'
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
   console.log(featured)
   return (
     <div>
+      <CubePreloader />
       <Section>
         {
           featured.map((f, index) => {

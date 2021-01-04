@@ -8,7 +8,7 @@ export default function Featured(props) {
       <div className="Featured">
         <ul className="Featured__film">
           {
-            film.stills.map((fs, index) => {
+            film.stills.slice(0,3).map((fs, index) => {
               return (
                 <li key={index}><img src={fs.url} alt={fs.alt}/></li>
               )
