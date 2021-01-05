@@ -2,8 +2,44 @@
   padding-top: 30px;
   z-index: 499;
   position: sticky;
-  top: 100px;
+  top: 66px;
   background: $blackdim;
+  @media screen and (max-width: 450px){
+    overflow-x: auto;
+  }
+  @media screen and (min-width: 767px){
+    top: 77px;
+  }
+  @media screen and (min-width: 969px){
+    top: 100px;
+  }
+
+  /* width */
+  &::-webkit-scrollbar {
+    height: 2px;
+    margin-top: -5px;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 100%;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: $offblack;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    border: none;
+    // background: rgba($color: $grey, $alpha: 0.75);
+    background: $greydim;
+    opacity: 0.25;
+    border-radius: 10px;
+  }
 }
 
 .tabset {
@@ -29,7 +65,14 @@
   font-weight: 600;
   @include body-regular;
   color: $white;
-  min-width: 115px;
+  font-size: 14px;
+  
+  @media screen and (min-width: 565px){
+    min-width: 100px;
+  }
+  @media screen and (min-width: 767px){
+    font-size: 17px;
+  }
 }
 
 
@@ -41,6 +84,6 @@
 }
 
 .tab-panel {
-  padding-bottom: 30px;
+  padding-bottom: 15px;
   border-top: 1px solid #575757;
 }
