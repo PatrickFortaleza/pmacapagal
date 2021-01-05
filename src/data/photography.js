@@ -1,6 +1,6 @@
 export const photos = [
   // TRAVEL CATEGORY
-  {
+  { 
     alt: 'travel-01',
     id:'01',
     category: 'travel',
@@ -11,15 +11,15 @@ export const photos = [
     alt: 'travel-02',
     id:'02',
     category: 'travel',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-02.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-02.png',
+    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-03.png',
+    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-03.png',
   },
   {
     alt: 'travel-03',
     id:'03',
     category: 'travel',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-03.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-03.png',
+    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-02.png',
+    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-02.png',
   },
   {
     alt: 'travel-04',
@@ -46,29 +46,15 @@ export const photos = [
     alt: 'travel-07',
     id:'07',
     category: 'travel',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-07.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-07.png',
+    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-08.png',
+    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-08.png',
   },
   {
     alt: 'travel-08',
     id:'08',
     category: 'travel',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-08.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-08.png',
-  },
-  {
-    alt: 'travel-09',
-    id:'09',
-    category: 'travel',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-09.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-09.png',
-  },
-  {
-    alt: 'travel-10',
-    id:'10',
-    category: 'travel',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-10.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-10.png',
+    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-07.png',
+    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-07.png',
   },
   // PEOPLE CATEGORY
   {
@@ -86,6 +72,13 @@ export const photos = [
     hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/people-02.png',
   },
   {
+    alt: 'people-06',
+    id:'29',
+    category: 'people',
+    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/people-06.png',
+    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/people-06.png',
+  },
+  {
     alt: 'people-03',
     id:'13',
     category: 'people',
@@ -93,11 +86,11 @@ export const photos = [
     hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/people-03.png',
   },
   {
-    alt: 'people-04',
-    id:'14',
+    alt: 'people-06',
+    id:'30',
     category: 'people',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/people-04.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/people-04.png',
+    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/people-06.png',
+    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/people-06.png',
   },
   {
     alt: 'people-05',
@@ -111,15 +104,15 @@ export const photos = [
     alt: 'concerts-01',
     id:'16',
     category: 'concerts',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/concerts-01.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/concerts-01.png',
+    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/concerts-02.png',
+    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/concerts-02.png',
   },
   {
     alt: 'concerts-02',
     id:'17',
     category: 'concerts',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/concerts-02.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/concerts-02.png',
+    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/concerts-01.png',
+    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/concerts-01.png',
   },
   {
     alt: 'concerts-03',
@@ -129,25 +122,11 @@ export const photos = [
     hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/concerts-03.png',
   },
   {
-    alt: 'concerts-04',
-    id:'19',
+    alt: 'concerts-09',
+    id:'30',
     category: 'concerts',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/concerts-04.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/concerts-04.png',
-  },
-  {
-    alt: 'concerts-05',
-    id:'20',
-    category: 'concerts',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/concerts-05.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/concerts-05.png',
-  },
-  {
-    alt: 'concerts-06',
-    id:'21',
-    category: 'concerts',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/concerts-06.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/concerts-06.png',
+    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/concert-09.png',
+    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/concert-09.png',
   },
   {
     alt: 'concerts-07',
@@ -155,6 +134,13 @@ export const photos = [
     category: 'concerts',
     url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/concerts-07.png',
     hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/concerts-07.png',
+  },
+  {
+    alt: 'concerts-10',
+    id:'31',
+    category: 'concerts',
+    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/concert-10.png',
+    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/concert-10.png',
   },
   {
     alt: 'concerts-08',
@@ -165,11 +151,25 @@ export const photos = [
   },
   // CLIENTS CATEGORY
   {
+    alt: 'clients-06',
+    id:'33',
+    category: 'clients',
+    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-06.png',
+    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-06.png',
+  },
+  {
     alt: 'clients-01',
     id:'24',
     category: 'clients',
     url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-01.png',
     hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-01.png',
+  },
+  {
+    alt: 'clients-04',
+    id:'32',
+    category: 'clients',
+    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-04.png',
+    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-04.png',
   },
   {
     alt: 'clients-02',
@@ -179,24 +179,18 @@ export const photos = [
     hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-02.png',
   },
   {
+    alt: 'clients-04',
+    id:'32',
+    category: 'clients',
+    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-07.png',
+    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-07.png',
+  },
+  {
     alt: 'clients-03',
     id:'26',
     category: 'clients',
     url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-03.png',
     hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-03.png',
   },
-  {
-    alt: 'clients-04',
-    id:'27',
-    category: 'clients',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-04.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-04.png',
-  },
-  {
-    alt: 'clients-05',
-    id:'28',
-    category: 'clients',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-05.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-05.png',
-  },
 ]
+

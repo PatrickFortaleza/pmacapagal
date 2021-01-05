@@ -16,7 +16,7 @@ export default function Featured(props) {
   useEffect(() => {
     if (hasLoaded === true) {
       featuredFilmRow.current.classList.add('animated')
-      filmTitle.current.classList.add('animated')
+      filmTitle.current.classList.add('animated') 
     }
   }, [hasLoaded])
 
