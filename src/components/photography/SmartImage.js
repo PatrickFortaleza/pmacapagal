@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 
-export default function SmartImage({p, index, length}) {
+export default function SmartImage({p, loadNotifier, togglePreLoader, currentTab}) {
   const [loaded, toggleLoad] = useState(() => { return false })
   const [inView, toggleView] = useState(() => { return false })
   const offset = 0
@@ -8,6 +8,7 @@ export default function SmartImage({p, index, length}) {
 
   const handleLoad = () => {
     toggleLoad(true)
+    if(loadNotifier){loadNotifier(true)}
   }
 
   const onScroll = () => {
@@ -33,6 +34,20 @@ export default function SmartImage({p, index, length}) {
       toggleView(true)
     }
   }
+
+  useEffect(() => {
+    img.current.classList.remove('animate')
+    toggleLoad(false)
+    if(togglePreLoader){togglePreLoader(false)}
+    if(loaded){
+      if(togglePreLoader){togglePreLoader(true)}
+      onScroll()
+      if(loaded && inView){
+        onScroll()
+        img.current.classList.add('animate')
+      }
+    }
+  }, [currentTab])
 
   useEffect(() => {
     onScroll()

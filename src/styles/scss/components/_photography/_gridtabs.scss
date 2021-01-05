@@ -1,5 +1,9 @@
 .Tabs {
-  margin-top: 30px;
+  padding-top: 30px;
+  z-index: 499;
+  position: sticky;
+  top: 100px;
+  background: $blackdim;
 }
 
 .tabset {

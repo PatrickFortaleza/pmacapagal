@@ -8,10 +8,11 @@ export default function MasonryGrid({currentTab}) {
   const [loaded, upLoadCounter] = useState(() => { return false })
   let filteredPhotos;
 
-  const incrementLoadCounter = () => {
+  const incrementLoadCounter = (childData) => {
     console.log('last image loaded')
+    console.log(childData)
     setTimeout(() => {
-      upLoadCounter(true)
+      upLoadCounter(childData)
     }, 200)
   }
 
@@ -22,24 +23,31 @@ export default function MasonryGrid({currentTab}) {
       filteredPhotos = photos.filter(p => { return p.category === currentTab })
     }
   }
+  
+  const togglePreLoader = (childData) => {
+    upLoadCounter(childData)
+  }
 
   handleTabChange()
 
-  useEffect(() => {
-    handleTabChange()
-  }, [currentTab])
-
   return (
     <div className="MasonryGrid">
-        {/* {
+        {
           loaded ? null : <CubePreloader />
-        } */}
+        }
         <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}>
           <Masonry gutter={30}>
             {
               filteredPhotos.map((p, index) => {
                 return (
-                  <SmartImage key={index} p={p} index={index} length={filteredPhotos.length} />
+                  <SmartImage 
+                    key={index} 
+                    p={p} 
+                    currentTab={currentTab}
+                    onLoad={() => { console.log(`SmartImage ${index} has loaded`)}}
+                    loadNotifier={index === filteredPhotos.length - 1 ? incrementLoadCounter : undefined}
+                    togglePreLoader={index === filteredPhotos.length - 1 ? togglePreLoader : undefined}
+                  />
                 )
               })
             }
