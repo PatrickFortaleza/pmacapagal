@@ -43,9 +43,13 @@ export default function SmartImage({p, loadNotifier, togglePreLoader, currentTab
       if(togglePreLoader){togglePreLoader(true)}
       onScroll()
       if(loaded && inView){
-        onScroll()
         img.current.classList.add('animate')
       }
+      // FAIL SAFE -- incase the images don't animate.
+      setTimeout(() => {
+        if(!img.current) return null
+        img.current.classList.add('animate')
+      }, 1000)
     }
   }, [currentTab])
 

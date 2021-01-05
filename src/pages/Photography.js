@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import MasonryGrid from '../components/photography/MasonryGrid'
 import Tabs from '../components/photography/Tabs'
 import Section from '../components/entity/Section'
+import PageTitle from '../components/global/PageTitle'
 
 
 export default function Photography() {
@@ -14,6 +15,7 @@ export default function Photography() {
   return (
     <div className="Photography">
       <Section>
+        <PageTitle z={true} title={`PHOTOGRAPHY`} />
         <Tabs handleTabToggle={handleTabToggle}/>
         <MasonryGrid currentTab={currentTab}/>
       </Section>

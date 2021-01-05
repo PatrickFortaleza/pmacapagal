@@ -158,7 +158,41 @@
   transition: .2s ease-in-out;
 }
 * a:hover,
-* a:focus,
 * a:active {
   filter:brightness(50%);
+}
+
+
+/*----------------------------------------------
+# PAGE TITLES
+------------------------------------------------*/
+h1.PageTitle {
+  display: flex;
+  justify-content: space-around;
+  font-size: 17px;
+  letter-spacing: 0.5em;
+  padding-top: 30px;
+  &.z {
+    z-index: 499;
+  }
+  span {
+    display: inline-block;
+    @include body-regular;
+    color: white;
+    position: relative;
+    
+    &::after {
+      position: absolute;
+      bottom: -7px;
+      left: 0;
+      width: 50%;
+      height: 1px;
+      content: "";
+      background: $goldenrod;
+    }
+  }
+
+  &.z span {
+    z-index: 499;
+  }
 }
