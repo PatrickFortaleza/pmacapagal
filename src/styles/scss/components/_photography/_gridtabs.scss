@@ -1,0 +1,42 @@
+.Tabs {
+  margin-top: 30px;
+}
+
+.tabset {
+  display: flex;
+}
+
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: 15px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 600;
+  @include body-regular;
+  color: $white;
+  min-width: 115px;
+}
+
+
+.tabset > input:checked + label {
+  border-color: #575757;
+  border-bottom: 1px solid $blackdim;
+  border-top: 3px solid $goldenrod;
+  margin-bottom: -1px;
+}
+
+.tab-panel {
+  padding-bottom: 30px;
+  border-top: 1px solid #575757;
+}
