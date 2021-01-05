@@ -7,7 +7,7 @@ export default function MasonryGrid() {
     <div className="MasonryGrid">
         <p>Masonry Grid</p>
         <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}>
-          <Masonry columnsCount={4}>
+          <Masonry gutter={30}>
             {
               photos.map((p, index) => {
                 return (
