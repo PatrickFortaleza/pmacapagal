@@ -5,7 +5,6 @@ export default function Featured(props) {
   const { film, hasLoaded, baseDelay } = props
 
   const sendLoadNotif = () => {
-    console.log('last image loaded')
     if(props.notifyLoad === false) return null
     props.notifyLoad()
   }

@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import {
+  withRouter
+} from "react-router-dom";
+import FilmBody from '../components/films/FilmBody'
 
-export default function SingleFilm() {
+export default withRouter(function SingleFilm(props) {
+  const { match } = props;
+  const slug = match.params.slug
+
   return (
     <div>
-      <p>Single Film</p>
+      <FilmBody slug={slug} />
     </div>
   )
-}
+})
