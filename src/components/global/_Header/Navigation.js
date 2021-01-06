@@ -31,7 +31,7 @@ export default function Navigation(props) {
       toggleShow(true)
     }, 10)
   }
-
+ 
   const handleResize = () => {
     setwindowWidth(window.innerWidth)
   }
