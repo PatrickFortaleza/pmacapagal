@@ -57,15 +57,11 @@ export default function Navigation(props) {
               onMouseLeave={setHoverOff}
             >
               <button onClick={setClick}>FILM <div className="svg-cont triangle"><TriangleIcon /></div></button>
-              {toggleSubMenu ? 
-                <ul className={show ? 'active' : null}>
+                <ul className={toggleSubMenu ? 'active' : null}>
                   <li style={{transitionDelay: `${baseDelay * 2}s`}}><Link to="/film/shorts">SHORTS</Link></li>
                   <li style={{transitionDelay: `${baseDelay * 3}s`}}><Link to="/film/documentaries">DOCUMENTARIES</Link></li>
                   <li style={{transitionDelay: `${baseDelay * 4}s`}}><Link to="/film/personal">PERSONAL</Link></li>
                 </ul>
-              :
-              null
-              }
             </li>
             <li style={{transitionDelay: `${baseDelay * 5}s`}}><Link to="/photography">PHOTOGRAPHY</Link></li>
             <li style={{transitionDelay: `${baseDelay * 6}s`}}><Link to="/about">ABOUT</Link></li>
