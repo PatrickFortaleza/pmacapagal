@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { films } from '../../data/films'
 import FilmEmbed from './FilmEmbed'
+import Section from '../../components/entity/Section'
 
 export default function FilmBody(props) {
   const { slug } = props
@@ -36,6 +37,11 @@ export default function FilmBody(props) {
       <FilmEmbed 
         commonProps={FilmEmbedProps}
       />
+      <Section>
+        <div className="FilmBody__title">
+          <h1>{filmstudy ? filmstudy.title : ''}</h1>
+        </div>
+      </Section>
     </div>
   )
 }

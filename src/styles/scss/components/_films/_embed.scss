@@ -1,13 +1,28 @@
 .FilmBody {
   height: 100%;
+  .FilmBody__title {
+    height: calc(20vh - 100px);
+    margin: 0;
+    line-height: calc(20vh - 100px);
+
+    h1 {
+      @include heading-regular;
+      text-transform: uppercase;
+      color: $white;
+      font-size: 20px;
+      text-align: left;
+
+      @media screen and (min-width: 969px){
+        font-size: 30px;
+      }
+    }
+  }
 }
 .FilmEmbed {
-  // height: 100%;
   height: calc(80vh - 100px);
   position: relative;
   overflow: hidden;
   width: 100%;
-  // padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 
   iframe {
     position: absolute;
