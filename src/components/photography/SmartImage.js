@@ -12,7 +12,7 @@ export default function SmartImage({p, loadNotifier, togglePreLoader, currentTab
     toggleLoad(true)
     if(loadNotifier){loadNotifier(true)}
   }
-
+ 
   const onScroll = () => {
     if (!img.current) {
       toggleView(false)

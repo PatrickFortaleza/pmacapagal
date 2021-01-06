@@ -13,7 +13,7 @@ export default function Lightbox({url, alt, toggle}) {
   const handleLoad = () => {
     toggleLoad(true)
   }
-
+ 
   const handleChildClick = (e) => {
     e.stopPropagation();
     e.preventDefault();
