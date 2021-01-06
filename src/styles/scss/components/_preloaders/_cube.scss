@@ -1,0 +1,103 @@
+.cube__wrap {
+  z-index: 480;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: $blackdim;
+  position: fixed;
+  width: 100%;
+}
+
+.container__cube{
+  position:absolute;
+  height:50px;
+  width:50px;
+  left:50%;
+  top:50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  -webkit-perspective:100px;
+          perspective:100px;
+}
+.cube{
+  height:50px;
+  width:50px;
+  -webkit-transform-origin:50% 50%;
+          transform-origin:50% 50%;
+  -webkit-transform-style:preserve-3d;
+          transform-style:preserve-3d;
+  -webkit-animation:rotate 3s infinite ease-in-out;
+          animation:rotate 3s infinite ease-in-out;
+  
+}
+.side{
+  position:absolute;
+  display:block;
+  height:50px;
+  width:50px;
+}
+.side1{
+  background:$white;
+  -webkit-transform:translateZ(25px);
+          transform:translateZ(25px);
+}
+.side2{
+  background:$grey;
+  -webkit-transform:rotateY(90deg) translateZ(25px);
+          transform:rotateY(90deg) translateZ(25px);
+}
+.side3{
+  background:$white;
+  -webkit-transform:rotateY(180deg) translateZ(25px);
+          transform:rotateY(180deg) translateZ(25px);
+}
+.side4{
+  background:$grey;
+  -webkit-transform:rotateY(-90deg) translateZ(25px);
+          transform:rotateY(-90deg) translateZ(25px);
+}
+.side5{
+  background: $white;
+  -webkit-transform:rotateX(90deg) translateZ(25px);
+          transform:rotateX(90deg) translateZ(25px);
+}
+.side6{
+  background:$grey;
+  -webkit-transform:rotateX(-90deg) translateZ(25px);
+          transform:rotateX(-90deg) translateZ(25px);
+}
+
+@-webkit-keyframes rotate{
+  0%{
+    -webkit-transform:rotateX(0deg) rotateY(0deg);
+  }
+  40%{
+     -webkit-transform:rotateX(375deg) rotateY(0deg);
+  }
+  47%,50%{
+     -webkit-transform:rotateX(360deg) rotateY(0deg);    
+  }
+  90%{
+     -webkit-transform:rotateX(360deg) rotateY(375deg);
+  }
+  97%,100%{
+     -webkit-transform:rotateX(360deg) rotateY(360deg);
+  }
+}
+@keyframes rotate{
+  0%{
+    transform:rotateX(0deg) rotateY(0deg);
+  }
+  40%{
+    transform:rotateX(375deg) rotateY(0deg);
+  }
+  47%,50%{
+    transform:rotateX(360deg) rotateY(0deg);    
+  }
+  90%{
+    transform:rotateX(360deg) rotateY(375deg);
+  }
+  97%,100%{
+    transform:rotateX(360deg) rotateY(360deg);
+  }
+}

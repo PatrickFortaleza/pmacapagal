@@ -5,7 +5,7 @@ import SocialNav from './SocialNav'
 export default function Footer() {
   const date = new Date();
   const year = date.getFullYear()
-  return (
+  return ( 
     <footer className="Footer">
       <Section>
         <div className="Footer__flex">

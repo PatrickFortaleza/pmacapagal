@@ -23,7 +23,7 @@ export class Interface extends Component {
           <Switch>
             <Route path="/" component={Home} exact/>
             <Route path="/film/:category" component={withRouter(FilmCat)} />
-            <Route path="/filmstudy/:id" component={withRouter(SingleFilm)} />
+            <Route path="/filmstudy/:slug" component={withRouter(SingleFilm)} />
             <Route path="/photography" component={Photography} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
