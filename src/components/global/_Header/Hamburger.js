@@ -1,7 +1,22 @@
 import React, { useState, useEffect } from 'react'
+import {
+  withRouter
+} from "react-router-dom";
 
-export default function Hamburger(props) {
+export default withRouter(function Hamburger(props) {
   const [toggleMenu, toggle] = useState(() => { return false })
+  const [currentPath, setCurrentPath] = useState(props.location.pathname);
+
+
+  useEffect(() => {
+    const { pathname } = props.location;
+    setCurrentPath(pathname);
+    setOff()
+  }, [props.location.pathname]);
+
+  const setOff = () => {
+    toggle(false)
+  }
 
   const setToggle = () => {
     toggle(toggleMenu => !toggleMenu )
@@ -17,4 +32,4 @@ export default function Hamburger(props) {
       <div className='hamburger'></div>
     </button>
   )
-}
+})
