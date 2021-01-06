@@ -3,7 +3,7 @@ import React from 'react'
 export default function SingleFilm() {
   return (
     <div>
-      Single Film
+      <p>Single Film</p>
     </div>
   )
 }

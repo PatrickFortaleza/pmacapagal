@@ -3,7 +3,7 @@ import React from 'react'
 export default function Resume() {
   return (
     <div>
-      Resume
+      <p>Resume</p>
     </div>
   )
 }
