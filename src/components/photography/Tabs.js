@@ -10,6 +10,7 @@ export default function Tabs(props) {
   // This will fire every time there is a change to toggleMenu state variable.
   useEffect(() => {
     props.handleTabToggle(currentTab)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentTab]) 
 
   return (

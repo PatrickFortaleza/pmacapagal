@@ -12,6 +12,8 @@ export default withRouter(function Hamburger(props) {
     const { pathname } = props.location;
     setCurrentPath(pathname);
     setOff()
+    return currentPath
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.location.pathname]);
 
   const setOff = () => {
@@ -25,6 +27,7 @@ export default withRouter(function Hamburger(props) {
   // This will fire every time there is a change to toggleMenu state variable.
   useEffect(() => {
     props.willToggle(toggleMenu)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [toggleMenu])  
 
   return (

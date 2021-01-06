@@ -13,6 +13,7 @@ export default function Navigation(props) {
     toggleSub(true)
     setTimeout(() => {
       toggleShow(true)
+      return show
     }, 10)
   }
 
@@ -20,6 +21,7 @@ export default function Navigation(props) {
     toggleShow(false)
     setTimeout(() => {
       toggleSub(false)
+      return show
     }, 200)
   }
 
@@ -42,6 +44,7 @@ export default function Navigation(props) {
     return () => {
       window.removeEventListener('resize', handleResize)
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const toggleMenu = props.toggle;

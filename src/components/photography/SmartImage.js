@@ -61,6 +61,7 @@ export default function SmartImage({p, loadNotifier, togglePreLoader, currentTab
         img.current.classList.add('animate')
       }, 1000)
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentTab])
 
   useEffect(() => {

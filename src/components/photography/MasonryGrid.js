@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { photos } from '../../data/photography'
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import CubePreloader from '../entity/CubePreloader'
@@ -36,7 +36,7 @@ export default function MasonryGrid({currentTab}) {
           loaded ? null : <CubePreloader />
         }
         <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}>
-          <Masonry gutter={30}>
+          <Masonry gutter={`${30}px`} >
             {
               filteredPhotos.map((p, index) => {
                 return (
