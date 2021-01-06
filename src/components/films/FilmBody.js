@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { films } from '../../data/films'
+import FilmEmbed from './FilmEmbed'
 
 export default function FilmBody(props) {
   const [filmstudy, updateFilm] = useState(() => { return null })
@@ -16,9 +17,8 @@ export default function FilmBody(props) {
   }, [slug])
 
   return (
-    <div>
-        <p>{ slug }</p>
-        <p>{ filmstudy.title }</p>
+    <div className="FilmBody">
+        <FilmEmbed />
     </div>
   )
 }
