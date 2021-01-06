@@ -5,6 +5,7 @@ export const films = [
     featured: true,
     id: 1,
     slug: 'the-midnight-sweethearts',
+    embed: 'oZWyRJ40tdY',
     credits: [
       {
         role: "Director",
@@ -56,6 +57,7 @@ export const films = [
     featured: true,
     id: 2,
     slug: 'risky-biscuits',
+    embed: 'tmiOJjcRFkQ',
     credits: [
       {
         role: "Director",
@@ -111,6 +113,7 @@ export const films = [
     featured: true,
     id: 3,
     slug: 'specula',
+    embed: 'xyfNttgF01M',
     credits: [
       {
         role: "Director",
@@ -166,6 +169,7 @@ export const films = [
     featured: true,
     id: 4,
     slug: 'immanuuel-part-3',
+    embed: 'PPDZ2JGemZk',
     credits: [
       {
         role: "Director",
@@ -221,6 +225,7 @@ export const films = [
     featured: true,
     id: 5,
     slug: 'immanuuel-part-2',
+    embed: 'PPDZ2JGemZk',
     credits: [
       {
         role: "Director",
