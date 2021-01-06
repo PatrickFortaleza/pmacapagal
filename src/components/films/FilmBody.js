@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { films } from '../../data/films'
 import FilmEmbed from './FilmEmbed'
+import FilmStudyTabs from './FilmStudyTabs'
+import FilmStudyData from './FilmStudyData'
 import Section from '../../components/entity/Section'
 
 export default function FilmBody(props) {
   const { slug } = props
   const [filmstudy, updateFilm] = useState(() => { return null })
+  const [currentTab, toggleTab] = useState(() => { return 'credits' })
   let film
 
   useEffect(() => {
@@ -17,6 +20,10 @@ export default function FilmBody(props) {
     film = films.filter( f => f.slug === slug)[0]
     updateFilm(film)
   }, [slug])
+
+  const handleTabToggle = (childData) => {
+    toggleTab(childData)
+  }
 
   let FilmEmbedProps = {
     embed: ``,
@@ -38,9 +45,15 @@ export default function FilmBody(props) {
         commonProps={FilmEmbedProps}
       />
       <Section>
-        <div className="FilmBody__title">
+        <div className="FilmBody__title vc">
           <h1>{filmstudy ? filmstudy.title : ''}</h1>
         </div>
+        <FilmStudyTabs handleTabToggle={handleTabToggle} />
+        <FilmStudyData 
+          currentTab={currentTab} 
+          credits={filmstudy ? filmstudy.credits : null} 
+          stills={filmstudy ? filmstudy.stills : null}
+        />
       </Section>
     </div>
   )

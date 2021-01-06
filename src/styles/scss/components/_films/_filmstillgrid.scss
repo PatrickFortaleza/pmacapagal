@@ -1,0 +1,11 @@
+.FilmStudyData .stills {
+  display: none;
+
+  ul {
+    margin-top: 30px;
+  }
+}
+
+.FilmStudyData .stills.active {
+  display: block;
+}

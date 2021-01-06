@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import { PlayIcon } from '../icons'
+import CubePreloader from '../entity/CubePreloader'
 
 export default function FilmEmbed(props) {
   const { alt, embed, thumbnail } = props.commonProps
   const [play, setPlay] = useState(() => { return false })
+  const [loaded, upLoadCounter] = useState(() => { return false })
 
   const url = play
     ? `https://www.youtube.com/embed/${embed}?autoplay=1`
@@ -13,13 +15,22 @@ export default function FilmEmbed(props) {
     setPlay(true)
   }
 
+  const toggleLoad = () => {
+    upLoadCounter(true)
+  }
+
   return (
     <div className="FilmEmbed">
       <button className={play ? "EmbedOverlay active" :"EmbedOverlay"} onClick={togglePlay}>
+          {
+            loaded 
+            ? undefined
+            : <CubePreloader />
+          }
           <div className="play__icon">
             <PlayIcon />
           </div>
-          <img src={thumbnail ? thumbnail : ''} alt={alt ? alt: ''} />
+          <img src={thumbnail ? thumbnail : ''} alt={alt ? alt: ''} onLoad={toggleLoad}/>
       </button>
       <iframe 
         src={ url } 

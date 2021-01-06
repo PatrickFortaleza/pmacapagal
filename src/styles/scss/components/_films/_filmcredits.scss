@@ -1,0 +1,44 @@
+.credits {
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+  transition: 
+    visibility .2s ease-in-out 1s, 
+    opacity 1s ease-in-out 0s;
+}
+.credits.active {
+  visibility: visible;
+  display: block;
+  opacity: 1;
+}
+
+.credits ul {
+  li {
+    display: flex;
+    flex-direction: column;
+    @include body-regular;
+    color: $white;
+    font-size: 17px;
+    line-height: 1.4em;
+    margin-top: 20px;
+    text-align: left;
+
+    @media screen and (min-width: 600px){
+      flex-direction: row;
+    }
+
+    &.Camera {
+      margin-top: 70px;
+    }
+
+    &.Camera label {
+      display: none;
+    }
+
+    label {
+      @include body-bold;
+      text-transform: uppercase;
+      letter-spacing: 0.125em;
+    }
+  }
+}
