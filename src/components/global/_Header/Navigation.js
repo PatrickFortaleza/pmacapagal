@@ -22,7 +22,7 @@ export default function Navigation(props) {
     setTimeout(() => {
       toggleSub(false)
       return show
-    }, 200)
+    }, 200) 
   }
 
   const setClick = () => {
