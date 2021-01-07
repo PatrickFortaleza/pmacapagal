@@ -5,46 +5,37 @@ import CubePreloader from '../entity/CubePreloader'
 import SmartImage from './SmartImage'
 
 export default function MasonryGrid({currentTab}) {
-  const [loaded, upLoadCounter] = useState(() => { return false })
-  let filteredPhotos;
+  const [loaded, upLoadCounter] = useState(() => { return null })
 
-  const incrementLoadCounter = (childData) => {
+  const incrementLoadCounter = () => {
     setTimeout(() => {
-      upLoadCounter(childData)
+      upLoadCounter(true)
     }, 200)
   }
-
-  const handleTabChange = () => {
-    if(currentTab === 'all'){
-      filteredPhotos = photos
-    }else{
-      filteredPhotos = photos.filter(p => { return p.category === currentTab })
+  
+  const renderPreLoader = () => {
+    if(!loaded){
+      return <CubePreloader />
+    } else {
+      return null
     }
   }
-  
-  const togglePreLoader = (childData) => {
-    upLoadCounter(childData)
-  }
-
-  handleTabChange()
 
   return (
-    <div className="MasonryGrid">
+    <div className={`MasonryGrid ${currentTab}`}>
         {
-          loaded ? null : <CubePreloader />
+          renderPreLoader
         }
         <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}>
-          <Masonry gutter={`${30}px`} >
+          <Masonry >
             {
-              filteredPhotos.map((p, index) => {
+              photos.map((p, index) => {
                 return (
                   <SmartImage 
                     key={index} 
                     p={p} 
                     currentTab={currentTab}
-                    onLoad={() => { console.log(`SmartImage ${index} has loaded`)}}
-                    loadNotifier={index === filteredPhotos.length - 1 ? incrementLoadCounter : undefined}
-                    togglePreLoader={index === filteredPhotos.length - 1 ? togglePreLoader : undefined}
+                    loadNotifier={index === photos.length - 1 ? incrementLoadCounter : undefined}
                   />
                 )
               })

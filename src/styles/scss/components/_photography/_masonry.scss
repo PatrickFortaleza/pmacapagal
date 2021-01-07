@@ -1,17 +1,61 @@
 .MasonryGrid {
   z-index: 400;
-  padding-top: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+  // padding-top: 15px;
   img {
     width: 100%;
     vertical-align: bottom;
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity .2s ease-in-out, transform .2s ease-in-out;
     cursor: pointer;
   }
 
   img.animate {
     opacity: 1;
     transform: translateY(0);
+    transition: opacity .2s linear, transform .2s ease-in-out;
+  }
+}
+
+.MasonryGrid {
+  .SmartImage {
+    padding: 15px;
+  }
+}
+
+
+.MasonryGrid.all {
+  .SmartImage { display: block }
+  .SmartImage:not(.all){
+    display: none;
+  }
+}
+
+.MasonryGrid.concerts {
+  .SmartImage { display: block }
+  .SmartImage:not(.concerts){
+    display: none;
+  }
+}
+
+.MasonryGrid.clients {
+  .SmartImage { display: block }
+  .SmartImage:not(.clients){
+    display: none;
+  }
+}
+
+.MasonryGrid.people {
+  .SmartImage { display: block }
+  .SmartImage:not(.people){
+    display: none;
+  }
+}
+
+.MasonryGrid.travel {
+  .SmartImage { display: block }
+  .SmartImage:not(.travel){
+    display: none;
   }
 }

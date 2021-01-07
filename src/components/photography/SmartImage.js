@@ -2,14 +2,15 @@ import React, { useState, useEffect, useRef } from 'react'
 import Lightbox from './Lightbox'
 
 export default function SmartImage({p, loadNotifier, togglePreLoader, currentTab}) {
-  const [loaded, toggleLoad] = useState(() => { return false })
+  const [loaded, toggleLoad] = useState(() => { return null })
   const [inView, toggleView] = useState(() => { return false })
   const [activeLightBox, toggleLightBox] = useState(() => { return false })
   const offset = 0
   const img = useRef()
+  const SmartImage = useRef()
 
   const handleLoad = () => {
-    toggleLoad(true)
+    toggleLoad(bool => bool = true)
     if(loadNotifier){loadNotifier(true)}
   }
  
@@ -47,13 +48,12 @@ export default function SmartImage({p, loadNotifier, togglePreLoader, currentTab
 
   useEffect(() => {
     img.current.classList.remove('animate')
-    toggleLoad(false)
-    if(togglePreLoader){togglePreLoader(false)}
     if(loaded){
-      if(togglePreLoader){togglePreLoader(true)}
       onScroll()
       if(loaded && inView){
-        img.current.classList.add('animate')
+        setTimeout(() => {
+          img.current.classList.add('animate')
+        }, 250)
       }
       // FAIL SAFE -- incase the images don't animate.
       setTimeout(() => {
@@ -71,11 +71,11 @@ export default function SmartImage({p, loadNotifier, togglePreLoader, currentTab
   })
 
   return (
-    <div className="toggleLB">
+    <div ref={SmartImage} className={`SmartImage ${p.category} all`}>
       { activeLightBox ? <Lightbox toggle={handleToggleOffLightBox} url={p.hiResUrl} alt={p.alt} /> : null }
       <img
         onClick={handleToggleLightBox}
-        className={loaded && inView ? 'animate' : ''}
+        className={ loaded && inView ? 'animate' : '' }
         ref={img} 
         src={p.url}
         alt={p.alt}
