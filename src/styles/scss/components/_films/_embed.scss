@@ -1,0 +1,94 @@
+.FilmBody {
+  height: 100%;
+
+  .Tabs {
+    padding-top: 0 !important;
+  }
+  
+  .FilmBody__title {
+    height: 100px;
+    margin: 0;
+    // line-height: calc(20vh - 100px);
+
+    @media screen and (max-height: 1100px){
+      height: calc(20vh - 50px);
+    }
+
+    h1 {
+      @include heading-regular;
+      text-transform: uppercase;
+      color: $white;
+      font-size: 20px;
+      text-align: left;
+      margin: 0;
+
+      @media screen and (min-width: 969px){
+        font-size: 24px;
+      }
+    }
+  }
+}
+.FilmEmbed {
+  height: calc(80vh - 100px);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 299;
+  }
+
+  .EmbedOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 300;
+    cursor: pointer !important;
+    visibility: visible;
+    opacity: 1;
+    transition: 
+      visibility .2s ease-in-out 1s, 
+      opacity 1s ease-in-out 0s;
+
+    .cube__wrap {
+      position: absolute;
+    }
+
+    &.active {
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    .play__icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      svg {
+        width: 35px;
+        height: 35px;
+        fill: $white;
+        filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .25));
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      vertical-align: bottom;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+  }
+}

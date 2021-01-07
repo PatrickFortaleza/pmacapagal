@@ -30,3 +30,9 @@ export const ExitIcon = () => {
     <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z"/></svg>
   )
 }
+
+export const PlayIcon = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4,21V4c0-0.7,0.7-1.1,1.3-0.8l15.3,8.5c0.6,0.3,0.6,1.2,0,1.5L5.3,21.8C4.7,22.1,4,21.7,4,21z"/></svg>
+  )
+}

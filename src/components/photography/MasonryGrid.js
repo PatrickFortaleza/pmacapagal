@@ -9,8 +9,6 @@ export default function MasonryGrid({currentTab}) {
   let filteredPhotos;
 
   const incrementLoadCounter = (childData) => {
-    console.log('last image loaded')
-    console.log(childData)
     setTimeout(() => {
       upLoadCounter(childData)
     }, 200)

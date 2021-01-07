@@ -22,7 +22,7 @@ export default function Navigation(props) {
     setTimeout(() => {
       toggleSub(false)
       return show
-    }, 200)
+    }, 200) 
   }
 
   const setClick = () => {
@@ -31,7 +31,7 @@ export default function Navigation(props) {
       toggleShow(true)
     }, 10)
   }
-
+ 
   const handleResize = () => {
     setwindowWidth(window.innerWidth)
   }
