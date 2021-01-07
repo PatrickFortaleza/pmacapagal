@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef, useEffect } from 'react'
 import SmartStill from './SmartStill'
 
 export default function FilmStudyData(props) {
@@ -60,8 +60,8 @@ export default function FilmStudyData(props) {
           stills
           ? stills.map((s, index) => {
             return (
-              <li>
-                <SmartStill src={s.url} alt={s.alt} hires={s.hiResUrl} />
+              <li key={index}>
+                <SmartStill src={s.medResUrl} alt={s.alt} hires={s.hiResUrl} />
               </li>
             )
           })

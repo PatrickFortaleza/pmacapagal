@@ -34,7 +34,7 @@ export default function FilmBody(props) {
   if(filmstudy){
     FilmEmbedProps = {
       embed: filmstudy.embed,
-      thumbnail: filmstudy.stills[0].url,
+      thumbnail: filmstudy.stills[0].hiResUrl,
       alt: filmstudy.stills[0].alt,
     }
   }

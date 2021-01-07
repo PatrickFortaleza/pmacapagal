@@ -35,8 +35,8 @@ export default function FilmEmbed(props) {
       <iframe 
         src={ url }
         width="1600" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        frameBorder="0" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
     </div>
   )
 }

@@ -35,18 +35,26 @@ export const films = [
     stills: [
       {
         url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/themidnightsweethearts-01.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/themidnightsweethearts-01-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/themidnightsweethearts-01-hires.png",
         alt: "The Midnight Sweethearts still 01"
       },
       {
         url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/themidnightsweethearts-02.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/themidnightsweethearts-02-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/themidnightsweethearts-02-hires.png",
         alt: "The Midnight Sweethearts still 02"
       },
       {
         url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/themidnightsweethearts-03.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/themidnightsweethearts-03-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/themidnightsweethearts-03-hires.png",
         alt: "The Midnight Sweethearts still 03"
       },
       {
         url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/themidnightsweethearts-04.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/themidnightsweethearts-04-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/themidnightsweethearts-04-hires.png",
         alt: "The Midnight Sweethearts still 04"
       },
     ]
@@ -87,59 +95,28 @@ export const films = [
     stills: [
       {
         url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-01.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-01.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-01-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-01-hires.png",
         alt: "Risky Biscuits still 01"
       },
       {
         url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-02.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-02.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-02-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-02-hires.png",
         alt: "Risky Biscuits still 02"
       },
       {
         url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-03.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-03.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-03-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-03-hires.png",
         alt: "Risky Biscuits still 03"
       },
       {
         url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-04.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-04.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-04-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-04-hires.png",
         alt: "Risky Biscuits still 04"
-      },
-      {
-        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-04.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-04.png",
-        alt: "Risky Biscuits still 04"
-      },
-      {
-        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-04.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-04.png",
-        alt: "Risky Biscuits still 04"
-      },
-      {
-        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-01.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-01.png",
-        alt: "Risky Biscuits still 01"
-      },
-      {
-        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-02.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-02.png",
-        alt: "Risky Biscuits still 02"
-      },
-      {
-        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-03.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-03.png",
-        alt: "Risky Biscuits still 03"
-      },
-      {
-        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-04.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-04.png",
-        alt: "Risky Biscuits still 04"
-      },
-      {
-        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-04.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-04.png",
-        alt: "Risky Biscuits still 04"
-      },
+      }
     ]
   },
   {
@@ -178,22 +155,26 @@ export const films = [
     stills: [
       {
         url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-01.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-01.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-01-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-01-hires.png",
         alt: "Specula still 01"
       },
       {
         url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-02.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-02.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-01-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-01-hires.png",
         alt: "Specula still 02"
       },
       {
         url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-03.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-03.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-01-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-01-hires.png",
         alt: "Specula still 03"
       },
       {
         url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-04.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-04.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-01-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-01-hires.png",
         alt: "Specula still 04"
       },
     ]
@@ -234,22 +215,26 @@ export const films = [
     stills: [
       {
         url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-01.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-01.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-01-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-01-hires.png",
         alt: "Specula still 01"
       },
       {
         url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-02.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-02.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-02-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-02-hires.png",
         alt: "Specula still 02"
       },
       {
         url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-03.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-03.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-03-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-03-hires.png",
         alt: "Specula still 03"
       },
       {
         url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-04.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-04.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-04-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-04-hires.png",
         alt: "Specula still 04"
       },
     ]
@@ -290,22 +275,26 @@ export const films = [
     stills: [
       {
         url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-04.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-04.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-04-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-04-hires.png",
         alt: "Specula still 01"
       },
       {
         url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-03.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-03.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-03-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-03-hires.png",
         alt: "Specula still 02"
       },
       {
         url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-01.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-01.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-01-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-01-hires.png",
         alt: "Specula still 03"
       },
       {
         url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-02.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-02.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-02-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-02-hires.png",
         alt: "Specula still 04"
       },
     ]
