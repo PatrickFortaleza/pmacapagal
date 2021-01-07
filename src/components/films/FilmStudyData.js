@@ -51,7 +51,7 @@ export default function FilmStudyData(props) {
           stills
           ? stills.map((s, index) => {
             return (
-              <img src={s.url} alt={s.alt} />
+              <li><img src={s.url} alt={s.alt} /></li>
             )
           })
           : null
