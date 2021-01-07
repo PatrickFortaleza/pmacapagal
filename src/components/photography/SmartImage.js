@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import Lightbox from './Lightbox'
 
 export default function SmartImage({p, loadNotifier, togglePreLoader, currentTab}) {
-  const [loaded, toggleLoad] = useState(() => { return false })
+  const [loaded, toggleLoad] = useState(() => { return null })
   const [inView, toggleView] = useState(() => { return false })
   const [activeLightBox, toggleLightBox] = useState(() => { return false })
   const offset = 0
@@ -10,7 +10,8 @@ export default function SmartImage({p, loadNotifier, togglePreLoader, currentTab
   const SmartImage = useRef()
 
   const handleLoad = () => {
-    toggleLoad(true)
+    toggleLoad(bool => bool = true)
+    console.log('handle load fired')
     if(loadNotifier){loadNotifier(true)}
   }
  
@@ -46,20 +47,18 @@ export default function SmartImage({p, loadNotifier, togglePreLoader, currentTab
     toggleLightBox(childData)
   }
 
-  useEffect(() => {
-    SmartImage.current.parentElement.classList.add('SmartImage', `${p.category}`, `all`)
-    console.log(SmartImage.current.parentElement)
-  }, [])
+  // useEffect(() => {
+  //   SmartImage.current.parentElement.classList.add('SmartImage', `${p.category}`, `all`)
+  // }, [])
 
   useEffect(() => {
     img.current.classList.remove('animate')
-    toggleLoad(false)
-    if(togglePreLoader){togglePreLoader(false)}
     if(loaded){
-      if(togglePreLoader){togglePreLoader(true)}
       onScroll()
       if(loaded && inView){
-        img.current.classList.add('animate')
+        setTimeout(() => {
+          img.current.classList.add('animate')
+        }, 250)
       }
       // FAIL SAFE -- incase the images don't animate.
       setTimeout(() => {
@@ -76,12 +75,14 @@ export default function SmartImage({p, loadNotifier, togglePreLoader, currentTab
     return (() => document.removeEventListener('scroll', onScroll))
   })
 
+  console.log(`Loaded? ${loaded}`)
+
   return (
-    <div ref={SmartImage}>
+    <div ref={SmartImage} className={`SmartImage ${p.category} all`}>
       { activeLightBox ? <Lightbox toggle={handleToggleOffLightBox} url={p.hiResUrl} alt={p.alt} /> : null }
       <img
         onClick={handleToggleLightBox}
-        className={ loaded ? 'animate' : 'animate'}
+        className={ loaded && inView ? 'animate' : '' }
         ref={img} 
         src={p.url}
         alt={p.alt}

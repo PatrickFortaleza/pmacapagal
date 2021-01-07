@@ -1,41 +1,31 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { photos } from '../../data/photography'
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import CubePreloader from '../entity/CubePreloader'
 import SmartImage from './SmartImage'
 
 export default function MasonryGrid({currentTab}) {
-  const [loaded, upLoadCounter] = useState(() => { return false })
-  let filteredPhotos;
+  const [loaded, upLoadCounter] = useState(() => { return null })
 
-  const incrementLoadCounter = (childData) => {
+  const incrementLoadCounter = () => {
     setTimeout(() => {
-      upLoadCounter(childData)
+      upLoadCounter(true)
     }, 200)
   }
- 
-  const handleTabChange = () => {
-    console.log('attempt tab change')
-    // if(currentTab === 'all'){
-    //   filteredPhotos = photos
-    // }else{
-    //   filteredPhotos = photos.filter(p => { return p.category === currentTab })
-    // }
-  }
   
-  const togglePreLoader = (childData) => {
-    upLoadCounter(childData)
+  const renderPreLoader = () => {
+    if(!loaded){
+      return <CubePreloader />
+    } else {
+      return null
+    }
   }
-
-  console.log(currentTab)
-
-  // handleTabChange()
 
   return (
     <div className={`MasonryGrid ${currentTab}`}>
-        {/* {
-          loaded ? null : <CubePreloader />
-        } */}
+        {
+          renderPreLoader
+        }
         <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}>
           <Masonry >
             {
@@ -46,7 +36,6 @@ export default function MasonryGrid({currentTab}) {
                     p={p} 
                     currentTab={currentTab}
                     loadNotifier={index === photos.length - 1 ? incrementLoadCounter : undefined}
-                    togglePreLoader={index === photos.length - 1 ? togglePreLoader : undefined}
                   />
                 )
               })
