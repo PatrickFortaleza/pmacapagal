@@ -74,6 +74,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      z-index: 400;
 
       svg {
         width: 35px;
@@ -89,6 +90,12 @@
       vertical-align: bottom;
       object-fit: cover;
       object-position: 50% 50%;
+      opacity: 0;
+      transition: .2s ease-in-out;
+    }
+
+    img.animate {
+      opacity: 1;
     }
   }
 }

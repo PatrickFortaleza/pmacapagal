@@ -30,7 +30,7 @@ export default function FilmEmbed(props) {
           <div className="play__icon">
             <PlayIcon />
           </div>
-          <img src={thumbnail ? thumbnail : ''} alt={alt ? alt: ''} onLoad={toggleLoad}/>
+          <img src={thumbnail ? thumbnail : ''} alt={alt ? alt: ''} className={ loaded ? `animate` : `` } onLoad={toggleLoad}/>
       </button>
       <iframe
         title={ alt } 

@@ -24,7 +24,7 @@ export const films = [
         name: "David Kruta"
       },
       {
-        role: "Keygrid",
+        role: "Keygrip",
         name: "Khalid Mohtaseb"
       },
       {
@@ -84,7 +84,7 @@ export const films = [
         name: "David Kruta"
       },
       {
-        role: "Keygrid",
+        role: "Keygrip",
         name: "Khalid Mohtaseb"
       },
       {
@@ -144,7 +144,7 @@ export const films = [
         name: "David Kruta"
       },
       {
-        role: "Keygrid",
+        role: "Keygrip",
         name: "Khalid Mohtaseb"
       },
       {
@@ -204,7 +204,7 @@ export const films = [
         name: "David Kruta"
       },
       {
-        role: "Keygrid",
+        role: "Keygrip",
         name: "Khalid Mohtaseb"
       },
       {
@@ -264,7 +264,7 @@ export const films = [
         name: "David Kruta"
       },
       {
-        role: "Keygrid",
+        role: "Keygrip",
         name: "Khalid Mohtaseb"
       },
       {
