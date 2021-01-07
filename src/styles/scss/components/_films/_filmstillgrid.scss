@@ -1,5 +1,7 @@
 .FilmStudyData .stills {
   display: none;
+  opacity: 0;
+  transition: .2s ease-in-out;
 
   ul {
     margin-top: 30px;
@@ -52,4 +54,8 @@
 
 .FilmStudyData .stills.active {
   display: block;
+}
+
+.FilmStudyData .stills.active.animate {
+  opacity: 1;
 }

@@ -10,16 +10,25 @@ export default function FilmStudyData(props) {
   const setTab = () => {
     switch(currentTab){
       case 'credits': 
-        stillsSection.current.classList.remove('active')
+        stillsSection.current.classList.remove('active', 'animate')
         creditsSection.current.classList.add('active')
+        setTimeout(() => {
+          creditsSection.current.classList.add('animate')
+        }, 200) 
         break
       case 'stills':
-        creditsSection.current.classList.remove('active')
+        creditsSection.current.classList.remove('active', 'animate')
         stillsSection.current.classList.add('active')
+        setTimeout(() => {
+          stillsSection.current.classList.add('animate')
+        }, 200) 
         break
       default:
-        stillsSection.current.classList.remove('active')
+        stillsSection.current.classList.remove('active', 'animate')
         creditsSection.current.classList.add('active')
+        setTimeout(() => {
+          creditsSection.current.classList.add('animate')
+        }, 200) 
         break
     }
   }
