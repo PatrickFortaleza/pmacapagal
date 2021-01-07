@@ -10,6 +10,7 @@ export default function MasonryGrid({currentTab}) {
     setTimeout(() => {
       upLoadCounter(true)
     }, 200)
+    return loaded
   }
   
   return (

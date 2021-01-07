@@ -21,6 +21,7 @@
       opacity: 0;
       transform: translateY(12px);
       transition: .2s ease-in-out;
+      overflow: hidden;
 
       &.animate {
         opacity: 1;
