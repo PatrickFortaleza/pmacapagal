@@ -1,0 +1,128 @@
+.FilmCategoryGrid {
+  padding-bottom: 30px;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    
+    li.FilmCategoryGrid__node {
+      width: 100%;
+      @media screen and (min-width: 767px){
+        width: calc(100% / 2);
+      }
+      @media screen and (min-width: 1200px){
+        width: calc(100% / 3);
+      }
+      height: 120%;
+      padding: 30px 30px;
+      padding-left: 0;
+      padding-bottom: 0;
+      position: relative;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: .2s ease-in-out;
+
+      &.animate {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .node__wrap {
+        width: 100%;
+        height: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+        z-index: 199;
+        vertical-align: bottom;
+      }
+    }
+
+    .node__wrap {
+      position: relative;
+
+      .node__meta {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 200;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        &::before {
+          content: "";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: rgba($color: #000000, $alpha: .5);
+          background: linear-gradient(0deg, rgba(0,0,0,1) 4%, rgba(0,0,0,0.8015581232492998) 29%, rgba(0,0,0,0) 100%);
+          z-index: 200;
+          opacity: 0;
+          transform: translateY(12px);
+          transition: .2s ease-in-out;
+        }
+
+        .meta {
+          z-index: 201;
+          max-width: 90%;
+          margin-left: 30px;
+          padding-left: 15px;
+          padding-bottom: 15px;
+          position: relative;
+          opacity: 0;
+          transform: translateY(12px);
+          transition: .2s ease-in-out;
+
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 80%;
+            width: 1px;
+            background: $goldenrod;
+          }
+
+          p {
+            text-align: left;
+          }
+
+          p.meta__title {
+            @include heading-regular;
+            text-transform: uppercase;
+            font-size: 21px;
+          }
+
+          p.meta__category {
+            text-transform: capitalize;
+          }
+        }
+        
+      }
+    }
+  }
+}
+
+li.FilmCategoryGrid__node:hover,
+li.FilmCategoryGrid__node:active,
+li.FilmCategoryGrid__node:focus {
+
+  .node__meta::before {
+    opacity: 0.8 !important;
+    transform: translateY(0) !important;
+  }
+
+  .meta {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+} 
