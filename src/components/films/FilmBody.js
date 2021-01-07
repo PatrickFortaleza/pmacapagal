@@ -49,7 +49,7 @@ export default function FilmBody(props) {
           <h1>{filmstudy ? filmstudy.title : ''}</h1>
         </div>
         <FilmStudyTabs handleTabToggle={handleTabToggle} />
-        <FilmStudyData 
+        <FilmStudyData
           currentTab={currentTab} 
           credits={filmstudy ? filmstudy.credits : null} 
           stills={filmstudy ? filmstudy.stills : null}

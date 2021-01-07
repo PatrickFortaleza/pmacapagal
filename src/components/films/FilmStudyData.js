@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react'
-import Section from '../entity/Section'
+import SmartStill from './SmartStill'
 
 export default function FilmStudyData(props) {
   const { credits, stills, currentTab } = props
@@ -29,7 +29,7 @@ export default function FilmStudyData(props) {
   }, [currentTab])
 
   return (
-    <div className="FilmStudyData">
+    <div className="FilmStudyData" style={{marginBottom: `30px`}} >
       <div ref={creditsSection} className="credits" id="credits">
         <ul>
           {
@@ -51,7 +51,9 @@ export default function FilmStudyData(props) {
           stills
           ? stills.map((s, index) => {
             return (
-              <li><img src={s.url} alt={s.alt} /></li>
+              <li>
+                <SmartStill src={s.url} alt={s.alt} hires={s.hiResUrl} />
+              </li>
             )
           })
           : null

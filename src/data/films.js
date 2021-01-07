@@ -140,11 +140,6 @@ export const films = [
         hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-04.png",
         alt: "Risky Biscuits still 04"
       },
-      {
-        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-04.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/riskybiscuits-04.png",
-        alt: "Risky Biscuits still 04"
-      },
     ]
   },
   {

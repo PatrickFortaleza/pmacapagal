@@ -33,7 +33,8 @@ export default function FilmEmbed(props) {
           <img src={thumbnail ? thumbnail : ''} alt={alt ? alt: ''} onLoad={toggleLoad}/>
       </button>
       <iframe 
-        src={ url } 
+        src={ url }
+        width="1600" 
         frameborder="0" 
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
