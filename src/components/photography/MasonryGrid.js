@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { photos } from '../../data/photography'
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import CubePreloader from '../entity/CubePreloader'

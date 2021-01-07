@@ -11,7 +11,6 @@ export default function SmartImage({p, loadNotifier, togglePreLoader, currentTab
 
   const handleLoad = () => {
     toggleLoad(bool => bool = true)
-    console.log('handle load fired')
     if(loadNotifier){loadNotifier(true)}
   }
  
@@ -47,10 +46,6 @@ export default function SmartImage({p, loadNotifier, togglePreLoader, currentTab
     toggleLightBox(childData)
   }
 
-  // useEffect(() => {
-  //   SmartImage.current.parentElement.classList.add('SmartImage', `${p.category}`, `all`)
-  // }, [])
-
   useEffect(() => {
     img.current.classList.remove('animate')
     if(loaded){
@@ -74,8 +69,6 @@ export default function SmartImage({p, loadNotifier, togglePreLoader, currentTab
     document.addEventListener('scroll', onScroll)
     return (() => document.removeEventListener('scroll', onScroll))
   })
-
-  console.log(`Loaded? ${loaded}`)
 
   return (
     <div ref={SmartImage} className={`SmartImage ${p.category} all`}>
