@@ -9,7 +9,6 @@ export default function FilmBody(props) {
   const { slug } = props
   const [filmstudy, updateFilm] = useState(() => { return null })
   const [currentTab, toggleTab] = useState(() => { return 'credits' })
-  let film
 
   useEffect(() => {
     updateFilm(films.filter( f => f.slug === slug)[0])
