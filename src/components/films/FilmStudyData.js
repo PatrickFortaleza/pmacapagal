@@ -35,6 +35,7 @@ export default function FilmStudyData(props) {
 
   useEffect(() => {
     setTab()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentTab])
 
   return (

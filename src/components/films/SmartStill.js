@@ -50,7 +50,7 @@ export default function SmartStill({ src, alt, hires }) {
       { activeLightBox ? <Lightbox toggle={handleToggleOffLightBox} url={hires} alt={alt} /> : null }
       <img
         onClick={handleToggleLightBox}
-        className={inView ? 'animate' : ''}
+        className={inView ? 'animate still' : 'still'}
         ref={img} 
         src={src}
         alt={alt}

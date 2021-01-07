@@ -14,11 +14,13 @@ export default function FilmBody(props) {
   useEffect(() => {
     film = films.filter( f => f.slug === slug)[0]
     updateFilm(film)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   useEffect(() => {
     film = films.filter( f => f.slug === slug)[0]
     updateFilm(film)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [slug])
 
   const handleTabToggle = (childData) => {

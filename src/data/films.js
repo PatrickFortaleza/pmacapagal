@@ -161,20 +161,20 @@ export const films = [
       },
       {
         url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-02.png",
-        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-01-medres.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-01-hires.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-02-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-02-hires.png",
         alt: "Specula still 02"
       },
       {
         url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-03.png",
-        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-01-medres.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-01-hires.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-03-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-03-hires.png",
         alt: "Specula still 03"
       },
       {
         url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-04.png",
-        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-01-medres.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-01-hires.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-04-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-04-hires.png",
         alt: "Specula still 04"
       },
     ]

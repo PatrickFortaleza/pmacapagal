@@ -32,7 +32,8 @@ export default function FilmEmbed(props) {
           </div>
           <img src={thumbnail ? thumbnail : ''} alt={alt ? alt: ''} onLoad={toggleLoad}/>
       </button>
-      <iframe 
+      <iframe
+        title={ alt } 
         src={ url }
         width="1600" 
         frameBorder="0" 
