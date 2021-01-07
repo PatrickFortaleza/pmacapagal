@@ -7,6 +7,7 @@ export default function SmartImage({p, loadNotifier, togglePreLoader, currentTab
   const [activeLightBox, toggleLightBox] = useState(() => { return false })
   const offset = 0
   const img = useRef()
+  const SmartImage = useRef()
 
   const handleLoad = () => {
     toggleLoad(true)
@@ -46,6 +47,11 @@ export default function SmartImage({p, loadNotifier, togglePreLoader, currentTab
   }
 
   useEffect(() => {
+    SmartImage.current.parentElement.classList.add('SmartImage', `${p.category}`, `all`)
+    console.log(SmartImage.current.parentElement)
+  }, [])
+
+  useEffect(() => {
     img.current.classList.remove('animate')
     toggleLoad(false)
     if(togglePreLoader){togglePreLoader(false)}
@@ -71,11 +77,11 @@ export default function SmartImage({p, loadNotifier, togglePreLoader, currentTab
   })
 
   return (
-    <div className="toggleLB">
+    <div ref={SmartImage}>
       { activeLightBox ? <Lightbox toggle={handleToggleOffLightBox} url={p.hiResUrl} alt={p.alt} /> : null }
       <img
         onClick={handleToggleLightBox}
-        className={loaded && inView ? 'animate' : ''}
+        className={ loaded ? 'animate' : 'animate'}
         ref={img} 
         src={p.url}
         alt={p.alt}
