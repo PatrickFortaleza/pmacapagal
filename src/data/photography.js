@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 
 // IMAGE IMPORTS
-// ======================================================
+// =======================================================
 // 1.0 CONCERTS ==========================================
 import concerts01DR from '../images/concert/concert-1.jpg'
 import concerts01HR from '../images/concert/highres/concert-1.jpg'
@@ -100,6 +100,68 @@ import concerts31HR from '../images/concert/highres/concert-31.jpg'
 import concerts32DR from '../images/concert/concert-32.jpg'
 import concerts32HR from '../images/concert/highres/concert-32.jpg'
 
+// 2.0 PEOPLE ==========================================
+import people01DR from '../images/people/people-1.jpg'
+import people01HR from '../images/people/highres/people-1.jpg'
+
+import people02DR from '../images/people/people-2.jpg'
+import people02HR from '../images/people/highres/people-2.jpg'
+
+import people03DR from '../images/people/people-3.jpg'
+import people03HR from '../images/people/highres/people-3.jpg'
+
+import people04DR from '../images/people/people-4.jpg'
+import people04HR from '../images/people/highres/people-4.jpg'
+
+import people05DR from '../images/people/people-5.jpg'
+import people05HR from '../images/people/highres/people-5.jpg'
+
+import people06DR from '../images/people/people-6.jpg'
+import people06HR from '../images/people/highres/people-6.jpg'
+
+import people07DR from '../images/people/people-7.jpg'
+import people07HR from '../images/people/highres/people-7.jpg'
+
+import people08DR from '../images/people/people-8.jpg'
+import people08HR from '../images/people/highres/people-8.jpg'
+
+import people09DR from '../images/people/people-9.jpg'
+import people09HR from '../images/people/highres/people-9.jpg'
+
+import people10DR from '../images/people/people-10.jpg'
+import people10HR from '../images/people/highres/people-10.jpg'
+
+import people11DR from '../images/people/people-11.jpg'
+import people11HR from '../images/people/highres/people-11.jpg'
+
+import people12DR from '../images/people/people-12.jpg'
+import people12HR from '../images/people/highres/people-12.jpg'
+
+import people13DR from '../images/people/people-13.jpg'
+import people13HR from '../images/people/highres/people-13.jpg'
+
+import people14DR from '../images/people/people-14.jpg'
+import people14HR from '../images/people/highres/people-14.jpg'
+
+import people15DR from '../images/people/people-15.jpg'
+import people15HR from '../images/people/highres/people-15.jpg'
+
+import people16DR from '../images/people/people-16.jpg'
+import people16HR from '../images/people/highres/people-16.jpg'
+
+import people17DR from '../images/people/people-17.jpg'
+import people17HR from '../images/people/highres/people-17.jpg'
+
+import people18DR from '../images/people/people-18.jpg'
+import people18HR from '../images/people/highres/people-18.jpg'
+
+import people19DR from '../images/people/people-19.jpg'
+import people19HR from '../images/people/highres/people-19.jpg'
+
+import people20DR from '../images/people/people-20.jpg'
+import people20HR from '../images/people/highres/people-20.jpg'
+
+
 export const photos = [
   // TRAVEL CATEGORY
   { 
@@ -163,43 +225,141 @@ export const photos = [
     alt: 'people-01',
     id: uuidv4(),
     category: 'people',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/people-01.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/people-01.png',
+    url: people01DR,
+    hiResUrl: people01HR,
   },
   {
     alt: 'people-02',
     id: uuidv4(),
     category: 'people',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/people-02.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/people-02.png',
-  },
-  {
-    alt: 'people-06',
-    id: uuidv4(),
-    category: 'people',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/people-06.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/people-06.png',
+    url: people03DR,
+    hiResUrl: people03HR,
   },
   {
     alt: 'people-03',
     id: uuidv4(),
     category: 'people',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/people-03.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/people-03.png',
+    url: people02DR,
+    hiResUrl: people02HR,
   },
   {
-    alt: 'people-06',
+    alt: 'people-04',
     id: uuidv4(),
     category: 'people',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/people-06.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/people-06.png',
+    url: people04DR,
+    hiResUrl: people04HR,
   },
   {
     alt: 'people-05',
     id: uuidv4(),
     category: 'people',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/people-05.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/people-05.png',
+    url: people05DR,
+    hiResUrl: people05HR,
+  },
+  {
+    alt: 'people-06',
+    id: uuidv4(),
+    category: 'people',
+    url: people06DR,
+    hiResUrl: people06HR,
+  },
+  {
+    alt: 'people-07',
+    id: uuidv4(),
+    category: 'people',
+    url: people09DR,
+    hiResUrl: people09HR,
+  },
+  {
+    alt: 'people-08',
+    id: uuidv4(),
+    category: 'people',
+    url: people07DR,
+    hiResUrl: people07HR,
+  },
+  {
+    alt: 'people-09',
+    id: uuidv4(),
+    category: 'people',
+    url: people12DR,
+    hiResUrl: people12HR,
+  },
+  {
+    alt: 'people-10',
+    id: uuidv4(),
+    category: 'people',
+    url: people08DR,
+    hiResUrl: people08HR,
+  },
+  {
+    alt: 'people-11',
+    id: uuidv4(),
+    category: 'people',
+    url: people15DR,
+    hiResUrl: people15HR,
+  },
+  {
+    alt: 'people-12',
+    id: uuidv4(),
+    category: 'people',
+    url: people10DR,
+    hiResUrl: people10HR,
+  },
+  {
+    alt: 'people-13',
+    id: uuidv4(),
+    category: 'people',
+    url: people18DR,
+    hiResUrl: people18HR,
+  },
+  {
+    alt: 'people-14',
+    id: uuidv4(),
+    category: 'people',
+    url: people11DR,
+    hiResUrl: people11HR,
+  },
+  {
+    alt: 'people-15',
+    id: uuidv4(),
+    category: 'people',
+    url: people19DR,
+    hiResUrl: people19HR,
+  },
+  {
+    alt: 'people-16',
+    id: uuidv4(),
+    category: 'people',
+    url: people13DR,
+    hiResUrl: people13HR,
+  },
+  {
+    alt: 'people-17',
+    id: uuidv4(),
+    category: 'people',
+    url: people20DR,
+    hiResUrl: people20HR,
+  },
+  {
+    alt: 'people-18',
+    id: uuidv4(),
+    category: 'people',
+    url: people14DR,
+    hiResUrl: people14HR,
+  },
+  {
+    alt: 'people-19',
+    id: uuidv4(),
+    category: 'people',
+    url: people16DR,
+    hiResUrl: people16HR,
+  },
+  {
+    alt: 'people-20',
+    id: uuidv4(),
+    category: 'people',
+    url: people17DR,
+    hiResUrl: people17HR,
   },
   // CONCERTS CATEGORY
   {
@@ -418,6 +578,13 @@ export const photos = [
     category: 'concerts',
     url: concerts30DR,
     hiResUrl: concerts30HR,
+  },
+  {
+    alt: 'concerts-32',
+    id: uuidv4(),
+    category: 'concerts',
+    url: concerts24DR,
+    hiResUrl: concerts24HR,
   },
   // CLIENTS CATEGORY
   {
