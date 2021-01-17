@@ -1,7 +1,8 @@
-import React, { useEffect, useRef }from 'react'
+import React, { useEffect, useRef, useState }from 'react'
 import { Link } from 'react-router-dom';
 
 export default function Featured(props) {
+  const [imgHeight, changeHeight] = useState(() => {return 0})
   const { film, hasLoaded, baseDelay } = props
 
   const sendLoadNotif = () => {
@@ -11,6 +12,7 @@ export default function Featured(props) {
 
   const featuredFilmRow = useRef()
   const filmTitle = useRef()
+  const img = useRef()
 
   useEffect(() => {
     if (hasLoaded === true) {
@@ -18,6 +20,21 @@ export default function Featured(props) {
       filmTitle.current.classList.add('animated') 
     }
   }, [hasLoaded])
+
+  const handleResize = () => {
+    const elm = img.current
+    changeHeight(h => h = elm.offsetHeight)
+  }
+
+  // On mount, add a event listener
+  useEffect(() => {
+    window.addEventListener('resize', handleResize)
+    // When we addEventListners we want to be wary of removing them once the component unmounts.
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
     <Link to={`/filmstudy/${film.slug}`}>
@@ -28,9 +45,14 @@ export default function Featured(props) {
               return (
                 <li 
                   key={index}
-                  style={{transition: `opacity .2s ease-in-out ${((index + 1) * 0.125) + baseDelay}s`}}
+                  ref={img}
+                  style={{
+                    transition: `opacity .2s ease-in-out ${((index + 1) * 0.125) + baseDelay}s`,
+                    width: `${imgHeight * 2.23}px`
+                  }}
                 >
-                  <img 
+                  <img
+                    height="418" 
                     src={fs.url} 
                     alt={fs.alt} 
                     onLoad={index === 2 ? sendLoadNotif : undefined }
