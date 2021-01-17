@@ -4,217 +4,217 @@ import { v4 as uuidv4 } from 'uuid';
 // IMAGE IMPORTS
 // =======================================================
 // 1.0 CONCERTS ==========================================
-import concerts01DR from '../images/concert/concert-1.jpg'
-import concerts01HR from '../images/concert/highres/concert-1.jpg'
+import concerts01DR from './../images/concert/concert-1.jpg'
+import concerts01HR from './../images/concert/highres/concert-1.jpg'
 
-import concerts02DR from '../images/concert/concert-2.jpg'
-import concerts02HR from '../images/concert/highres/concert-2.jpg'
+import concerts02DR from './../images/concert/concert-2.jpg'
+import concerts02HR from './../images/concert/highres/concert-2.jpg'
 
-import concerts03DR from '../images/concert/concert-3.jpg'
-import concerts03HR from '../images/concert/highres/concert-3.jpg'
+import concerts03DR from './../images/concert/concert-3.jpg'
+import concerts03HR from './../images/concert/highres/concert-3.jpg'
 
-import concerts04DR from '../images/concert/concert-4.jpg'
-import concerts04HR from '../images/concert/highres/concert-4.jpg'
+import concerts04DR from './../images/concert/concert-4.jpg'
+import concerts04HR from './../images/concert/highres/concert-4.jpg'
 
-import concerts05DR from '../images/concert/concert-5.jpg'
-import concerts05HR from '../images/concert/highres/concert-5.jpg'
+import concerts05DR from './../images/concert/concert-5.jpg'
+import concerts05HR from './../images/concert/highres/concert-5.jpg'
 
-import concerts06DR from '../images/concert/concert-6.jpg'
-import concerts06HR from '../images/concert/highres/concert-6.jpg'
+import concerts06DR from './../images/concert/concert-6.jpg'
+import concerts06HR from './../images/concert/highres/concert-6.jpg'
 
-import concerts07DR from '../images/concert/concert-7.jpg'
-import concerts07HR from '../images/concert/highres/concert-7.jpg'
+import concerts07DR from './../images/concert/concert-7.jpg'
+import concerts07HR from './../images/concert/highres/concert-7.jpg'
 
-import concerts08DR from '../images/concert/concert-8.jpg'
-import concerts08HR from '../images/concert/highres/concert-8.jpg'
+import concerts08DR from './../images/concert/concert-8.jpg'
+import concerts08HR from './../images/concert/highres/concert-8.jpg'
 
-import concerts09DR from '../images/concert/concert-9.jpg'
-import concerts09HR from '../images/concert/highres/concert-9.jpg'
+import concerts09DR from './../images/concert/concert-9.jpg'
+import concerts09HR from './../images/concert/highres/concert-9.jpg'
 
-import concerts10DR from '../images/concert/concert-10.jpg'
-import concerts10HR from '../images/concert/highres/concert-10.jpg'
+import concerts10DR from './../images/concert/concert-10.jpg'
+import concerts10HR from './../images/concert/highres/concert-10.jpg'
 
-import concerts11DR from '../images/concert/concert-11.jpg'
-import concerts11HR from '../images/concert/highres/concert-11.jpg'
+import concerts11DR from './../images/concert/concert-11.jpg'
+import concerts11HR from './../images/concert/highres/concert-11.jpg'
 
-import concerts12DR from '../images/concert/concert-12.jpg'
-import concerts12HR from '../images/concert/highres/concert-12.jpg'
+import concerts12DR from './../images/concert/concert-12.jpg'
+import concerts12HR from './../images/concert/highres/concert-12.jpg'
 
-import concerts13DR from '../images/concert/concert-13.jpg'
-import concerts13HR from '../images/concert/highres/concert-13.jpg'
+import concerts13DR from './../images/concert/concert-13.jpg'
+import concerts13HR from './../images/concert/highres/concert-13.jpg'
 
-import concerts14DR from '../images/concert/concert-14.jpg'
-import concerts14HR from '../images/concert/highres/concert-14.jpg'
+import concerts14DR from './../images/concert/concert-14.jpg'
+import concerts14HR from './../images/concert/highres/concert-14.jpg'
 
-import concerts15DR from '../images/concert/concert-15.jpg'
-import concerts15HR from '../images/concert/highres/concert-15.jpg'
+import concerts15DR from './../images/concert/concert-15.jpg'
+import concerts15HR from './../images/concert/highres/concert-15.jpg'
 
-import concerts16DR from '../images/concert/concert-16.jpg'
-import concerts16HR from '../images/concert/highres/concert-16.jpg'
+import concerts16DR from './../images/concert/concert-16.jpg'
+import concerts16HR from './../images/concert/highres/concert-16.jpg'
 
-import concerts17DR from '../images/concert/concert-17.jpg'
-import concerts17HR from '../images/concert/highres/concert-17.jpg'
+import concerts17DR from './../images/concert/concert-17.jpg'
+import concerts17HR from './../images/concert/highres/concert-17.jpg'
 
-import concerts18DR from '../images/concert/concert-18.jpg'
-import concerts18HR from '../images/concert/highres/concert-18.jpg'
+import concerts18DR from './../images/concert/concert-18.jpg'
+import concerts18HR from './../images/concert/highres/concert-18.jpg'
 
-import concerts19DR from '../images/concert/concert-19.jpg'
-import concerts19HR from '../images/concert/highres/concert-19.jpg'
+import concerts19DR from './../images/concert/concert-19.jpg'
+import concerts19HR from './../images/concert/highres/concert-19.jpg'
 
-import concerts20DR from '../images/concert/concert-20.jpg'
-import concerts20HR from '../images/concert/highres/concert-20.jpg'
+import concerts20DR from './../images/concert/concert-20.jpg'
+import concerts20HR from './../images/concert/highres/concert-20.jpg'
 
-import concerts21DR from '../images/concert/concert-21.jpg'
-import concerts21HR from '../images/concert/highres/concert-21.jpg'
+import concerts21DR from './../images/concert/concert-21.jpg'
+import concerts21HR from './../images/concert/highres/concert-21.jpg'
 
-import concerts22DR from '../images/concert/concert-22.jpg'
-import concerts22HR from '../images/concert/highres/concert-22.jpg'
+import concerts22DR from './../images/concert/concert-22.jpg'
+import concerts22HR from './../images/concert/highres/concert-22.jpg'
 
-import concerts23DR from '../images/concert/concert-23.jpg'
-import concerts23HR from '../images/concert/highres/concert-23.jpg'
+import concerts23DR from './../images/concert/concert-23.jpg'
+import concerts23HR from './../images/concert/highres/concert-23.jpg'
 
-import concerts24DR from '../images/concert/concert-24.jpg'
-import concerts24HR from '../images/concert/highres/concert-24.jpg'
+import concerts24DR from './../images/concert/concert-24.jpg'
+import concerts24HR from './../images/concert/highres/concert-24.jpg'
 
-import concerts25DR from '../images/concert/concert-25.jpg'
-import concerts25HR from '../images/concert/highres/concert-25.jpg'
+import concerts25DR from './../images/concert/concert-25.jpg'
+import concerts25HR from './../images/concert/highres/concert-25.jpg'
 
-import concerts26DR from '../images/concert/concert-26.jpg'
-import concerts26HR from '../images/concert/highres/concert-26.jpg'
+import concerts26DR from './../images/concert/concert-26.jpg'
+import concerts26HR from './../images/concert/highres/concert-26.jpg'
 
-import concerts27DR from '../images/concert/concert-27.jpg'
-import concerts27HR from '../images/concert/highres/concert-27.jpg'
+import concerts27DR from './../images/concert/concert-27.jpg'
+import concerts27HR from './../images/concert/highres/concert-27.jpg'
 
-import concerts28DR from '../images/concert/concert-28.jpg'
-import concerts28HR from '../images/concert/highres/concert-28.jpg'
+import concerts28DR from './../images/concert/concert-28.jpg'
+import concerts28HR from './../images/concert/highres/concert-28.jpg'
 
-import concerts29DR from '../images/concert/concert-29.jpg'
-import concerts29HR from '../images/concert/highres/concert-29.jpg'
+import concerts29DR from './../images/concert/concert-29.jpg'
+import concerts29HR from './../images/concert/highres/concert-29.jpg'
 
-import concerts30DR from '../images/concert/concert-30.jpg'
-import concerts30HR from '../images/concert/highres/concert-30.jpg'
+import concerts30DR from './../images/concert/concert-30.jpg'
+import concerts30HR from './../images/concert/highres/concert-30.jpg'
 
-import concerts31DR from '../images/concert/concert-31.jpg'
-import concerts31HR from '../images/concert/highres/concert-31.jpg'
+import concerts31DR from './../images/concert/concert-31.jpg'
+import concerts31HR from './../images/concert/highres/concert-31.jpg'
 
-import concerts32DR from '../images/concert/concert-32.jpg'
-import concerts32HR from '../images/concert/highres/concert-32.jpg'
+import concerts32DR from './../images/concert/concert-32.jpg'
+import concerts32HR from './../images/concert/highres/concert-32.jpg'
 
 // 2.0 PEOPLE ==========================================
-import people01DR from '../images/people/people-1.jpg'
-import people01HR from '../images/people/highres/people-1.jpg'
+import people01DR from './../images/people/people-1.jpg'
+import people01HR from './../images/people/highres/people-1.jpg'
 
-import people02DR from '../images/people/people-2.jpg'
-import people02HR from '../images/people/highres/people-2.jpg'
+import people02DR from './../images/people/people-2.jpg'
+import people02HR from './../images/people/highres/people-2.jpg'
 
-import people03DR from '../images/people/people-3.jpg'
-import people03HR from '../images/people/highres/people-3.jpg'
+import people03DR from './../images/people/people-3.jpg'
+import people03HR from './../images/people/highres/people-3.jpg'
 
-import people04DR from '../images/people/people-4.jpg'
-import people04HR from '../images/people/highres/people-4.jpg'
+import people04DR from './../images/people/people-4.jpg'
+import people04HR from './../images/people/highres/people-4.jpg'
 
-import people05DR from '../images/people/people-5.jpg'
-import people05HR from '../images/people/highres/people-5.jpg'
+import people05DR from './../images/people/people-5.jpg'
+import people05HR from './../images/people/highres/people-5.jpg'
 
-import people06DR from '../images/people/people-6.jpg'
-import people06HR from '../images/people/highres/people-6.jpg'
+import people06DR from './../images/people/people-6.jpg'
+import people06HR from './../images/people/highres/people-6.jpg'
 
-import people07DR from '../images/people/people-7.jpg'
-import people07HR from '../images/people/highres/people-7.jpg'
+import people07DR from './../images/people/people-7.jpg'
+import people07HR from './../images/people/highres/people-7.jpg'
 
-import people08DR from '../images/people/people-8.jpg'
-import people08HR from '../images/people/highres/people-8.jpg'
+import people08DR from './../images/people/people-8.jpg'
+import people08HR from './../images/people/highres/people-8.jpg'
 
-import people09DR from '../images/people/people-9.jpg'
-import people09HR from '../images/people/highres/people-9.jpg'
+import people09DR from './../images/people/people-9.jpg'
+import people09HR from './../images/people/highres/people-9.jpg'
 
-import people10DR from '../images/people/people-10.jpg'
-import people10HR from '../images/people/highres/people-10.jpg'
+import people10DR from './../images/people/people-10.jpg'
+import people10HR from './../images/people/highres/people-10.jpg'
 
-import people11DR from '../images/people/people-11.jpg'
-import people11HR from '../images/people/highres/people-11.jpg'
+import people11DR from './../images/people/people-11.jpg'
+import people11HR from './../images/people/highres/people-11.jpg'
 
-import people12DR from '../images/people/people-12.jpg'
-import people12HR from '../images/people/highres/people-12.jpg'
+import people12DR from './../images/people/people-12.jpg'
+import people12HR from './../images/people/highres/people-12.jpg'
 
-import people13DR from '../images/people/people-13.jpg'
-import people13HR from '../images/people/highres/people-13.jpg'
+import people13DR from './../images/people/people-13.jpg'
+import people13HR from './../images/people/highres/people-13.jpg'
 
-import people14DR from '../images/people/people-14.jpg'
-import people14HR from '../images/people/highres/people-14.jpg'
+import people14DR from './../images/people/people-14.jpg'
+import people14HR from './../images/people/highres/people-14.jpg'
 
-import people15DR from '../images/people/people-15.jpg'
-import people15HR from '../images/people/highres/people-15.jpg'
+import people15DR from './../images/people/people-15.jpg'
+import people15HR from './../images/people/highres/people-15.jpg'
 
-import people16DR from '../images/people/people-16.jpg'
-import people16HR from '../images/people/highres/people-16.jpg'
+import people16DR from './../images/people/people-16.jpg'
+import people16HR from './../images/people/highres/people-16.jpg'
 
-import people17DR from '../images/people/people-17.jpg'
-import people17HR from '../images/people/highres/people-17.jpg'
+import people17DR from './../images/people/people-17.jpg'
+import people17HR from './../images/people/highres/people-17.jpg'
 
-import people18DR from '../images/people/people-18.jpg'
-import people18HR from '../images/people/highres/people-18.jpg'
+import people18DR from './../images/people/people-18.jpg'
+import people18HR from './../images/people/highres/people-18.jpg'
 
-import people19DR from '../images/people/people-19.jpg'
-import people19HR from '../images/people/highres/people-19.jpg'
+import people19DR from './../images/people/people-19.jpg'
+import people19HR from './../images/people/highres/people-19.jpg'
 
-import people20DR from '../images/people/people-20.jpg'
-import people20HR from '../images/people/highres/people-20.jpg'
+import people20DR from './../images/people/people-20.jpg'
+import people20HR from './../images/people/highres/people-20.jpg'
 
 // 2.0 TRAVEL ==========================================
-import travel01DR from '../images/travel/travel-1.jpg'
-import travel01HR from '../images/travel/highres/travel-1.jpg'
+import travel01DR from './../images/travel/travel-1.jpg'
+import travel01HR from './../images/travel/highres/travel-1.jpg'
 
-import travel02DR from '../images/travel/travel-2.jpg'
-import travel02HR from '../images/travel/highres/travel-2.jpg'
+import travel02DR from './../images/travel/travel-2.jpg'
+import travel02HR from './../images/travel/highres/travel-2.jpg'
 
-import travel03DR from '../images/travel/travel-3.jpg'
-import travel03HR from '../images/travel/highres/travel-3.jpg'
+import travel03DR from './../images/travel/travel-3.jpg'
+import travel03HR from './../images/travel/highres/travel-3.jpg'
 
-import travel04DR from '../images/travel/travel-4.jpg'
-import travel04HR from '../images/travel/highres/travel-4.jpg'
+import travel04DR from './../images/travel/travel-4.jpg'
+import travel04HR from './../images/travel/highres/travel-4.jpg'
 
-import travel05DR from '../images/travel/travel-5.jpg'
-import travel05HR from '../images/travel/highres/travel-5.jpg'
+import travel05DR from './../images/travel/travel-5.jpg'
+import travel05HR from './../images/travel/highres/travel-5.jpg'
 
-import travel06DR from '../images/travel/travel-6.jpg'
-import travel06HR from '../images/travel/highres/travel-6.jpg'
+import travel06DR from './../images/travel/travel-6.jpg'
+import travel06HR from './../images/travel/highres/travel-6.jpg'
 
-import travel07DR from '../images/travel/travel-7.jpg'
-import travel07HR from '../images/travel/highres/travel-7.jpg'
+import travel07DR from './../images/travel/travel-7.jpg'
+import travel07HR from './../images/travel/highres/travel-7.jpg'
 
-import travel08DR from '../images/travel/travel-8.jpg'
-import travel08HR from '../images/travel/highres/travel-8.jpg'
+import travel08DR from './../images/travel/travel-8.jpg'
+import travel08HR from './../images/travel/highres/travel-8.jpg'
 
-import travel09DR from '../images/travel/travel-9.jpg'
-import travel09HR from '../images/travel/highres/travel-9.jpg'
+import travel09DR from './../images/travel/travel-9.jpg'
+import travel09HR from './../images/travel/highres/travel-9.jpg'
 
-import travel10DR from '../images/travel/travel-10.jpg'
-import travel10HR from '../images/travel/highres/travel-10.jpg'
+import travel10DR from './../images/travel/travel-10.jpg'
+import travel10HR from './../images/travel/highres/travel-10.jpg'
 
-import travel11DR from '../images/travel/travel-11.jpg'
-import travel11HR from '../images/travel/highres/travel-11.jpg'
+import travel11DR from './../images/travel/travel-11.jpg'
+import travel11HR from './../images/travel/highres/travel-11.jpg'
 
-import travel12DR from '../images/travel/travel-12.jpg'
-import travel12HR from '../images/travel/highres/travel-12.jpg'
+import travel12DR from './../images/travel/travel-12.jpg'
+import travel12HR from './../images/travel/highres/travel-12.jpg'
 
-import travel13DR from '../images/travel/travel-13.jpg'
-import travel13HR from '../images/travel/highres/travel-13.jpg'
+import travel13DR from './../images/travel/travel-13.jpg'
+import travel13HR from './../images/travel/highres/travel-13.jpg'
 
-import travel14DR from '../images/travel/travel-14.jpg'
-import travel14HR from '../images/travel/highres/travel-14.jpg'
+import travel14DR from './../images/travel/travel-14.jpg'
+import travel14HR from './../images/travel/highres/travel-14.jpg'
 
-import travel15DR from '../images/travel/travel-15.jpg'
-import travel15HR from '../images/travel/highres/travel-15.jpg'
+import travel15DR from './../images/travel/travel-15.jpg'
+import travel15HR from './../images/travel/highres/travel-15.jpg'
 
-import travel16DR from '../images/travel/travel-16.jpg'
-import travel16HR from '../images/travel/highres/travel-16.jpg'
+import travel16DR from './../images/travel/travel-16.jpg'
+import travel16HR from './../images/travel/highres/travel-16.jpg'
 
-import travel17DR from '../images/travel/travel-17.jpg'
-import travel17HR from '../images/travel/highres/travel-17.jpg'
+import travel17DR from './../images/travel/travel-17.jpg'
+import travel17HR from './../images/travel/highres/travel-17.jpg'
 
-import travel18DR from '../images/travel/travel-18.jpg'
-import travel18HR from '../images/travel/highres/travel-18.jpg'
+import travel18DR from './../images/travel/travel-18.jpg'
+import travel18HR from './../images/travel/highres/travel-18.jpg'
 
 
 export const photos = [
