@@ -1,37 +1,51 @@
+import { v4 as uuidv4 } from 'uuid';
+
 export const films = [
   {
     title: 'The Midnight Sweethearts',
     category: 'short',
     categoryPlural: 'shorts',
     featured: true,
-    id: 1,
+    id: uuidv4(),
     slug: 'the-midnight-sweethearts',
     embed: 'oZWyRJ40tdY',
     credits: [
       {
         role: "Director",
-        name: "Timur Civan"
+        name: "Andrew Renowitzky Gonzalez"
       },
       {
         role: "Director of Photography",
-        name: "Patrick Jones"
+        name: "Patricia Macapagal"
       },
       {
-        role: "First Assistant Director",
-        name: "Sean Cotany"
+        role: "Producer",
+        name: "Ona Liu"
       },
       {
-        role: "Gaffer",
-        name: "David Kruta"
+        role: "Assistant Director",
+        name: "Vicky Huang"
       },
       {
-        role: "Keygrip",
-        name: "Khalid Mohtaseb"
+        role: "Editor & Gaffer",
+        name: "Utae Kanauchi"
+      },
+      {
+        role: "Audio Mixer & Sound Designer",
+        name: "Peter Yuzyk"
+      },
+      {
+        role: "Boom Operator & Post Supervisor",
+        name: "Wyatt Wikstrom"
+      },
+      {
+        role: "First Camera Assistant",
+        name: "Crystal Liang"
       },
       {
         role: "Camera",
-        name: "RED Komodo and Canon Lens."
-      },
+        name: "Canon 5D Mark III"
+      }
     ],
     stills: [
       {
@@ -65,33 +79,45 @@ export const films = [
     category: 'short',
     categoryPlural: 'shorts',
     featured: true,
-    id: 2,
+    id: uuidv4(),
     slug: 'risky-biscuits',
     embed: 'tmiOJjcRFkQ',
     credits: [
       {
         role: "Director",
-        name: "Timur Civan"
+        name: "Ben McGregor"
       },
       {
         role: "Director of Photography",
-        name: "Patrick Jones"
+        name: "Patricia Macapagal"
       },
       {
-        role: "First Assistant Director",
-        name: "Sean Cotany"
+        role: "Production Manager",
+        name: "Shayan Takhayori"
+      },
+      {
+        role: "Assistant Director",
+        name: "Grace Wilson"
+      },
+      {
+        role: "Production Designer",
+        name: "Erin Chen"
+      },
+      {
+        role: "Editor",
+        name: "Madison Frieson"
+      },
+      {
+        role: "First Assistant Camera",
+        name: "Yogen Mistry"
       },
       {
         role: "Gaffer",
-        name: "David Kruta"
+        name: "Nick Dodic & George Barrie"
       },
       {
-        role: "Keygrip",
-        name: "Khalid Mohtaseb"
-      },
-      {
-        role: "Camera",
-        name: "RED Komodo and Canon Lens."
+        role: "Key Grip",
+        name: "William Choi"
       },
     ],
     stills: [
@@ -122,37 +148,102 @@ export const films = [
     ]
   },
   {
-    title: 'Specula',
+    title: 'Bugged',
     category: 'short',
     categoryPlural: 'shorts',
     featured: true,
-    id: 3,
+    id: uuidv4(),
+    slug: 'bugged',
+    embed: 'lO7icj-9bkE',
+    credits: [
+      {
+        role: "Director",
+        name: "Juan Winzer Cañero"
+      },
+      {
+        role: "Director of Photography",
+        name: "Sopithan Rajeswaran"
+      },
+      {
+        role: "Producer",
+        name: "Robert Bledig"
+      },
+      {
+        role: "Assistant Director",
+        name: "Joseph Logelin"
+      },
+      {
+        role: "Production Designer",
+        name: "Patricia Macapagal"
+      },
+      {
+        role: "Editor",
+        name: "Jeremy Sorensen"
+      },
+    ],
+    stills: [
+      {
+        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-01.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-01-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-01-hires.png",
+        alt: "Specula still 01"
+      },
+      {
+        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-02.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-02-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-02-hires.png",
+        alt: "Specula still 02"
+      },
+      {
+        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-03.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-03-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-03-hires.png",
+        alt: "Specula still 03"
+      },
+      {
+        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-04.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-04-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-04-hires.png",
+        alt: "Specula still 04"
+      },
+    ]
+  },
+  {
+    title: 'Specula',
+    category: 'short',
+    categoryPlural: 'shorts',
+    featured: false,
+    id: uuidv4(),
     slug: 'specula',
     embed: 'xyfNttgF01M',
     credits: [
       {
         role: "Director",
-        name: "Timur Civan"
+        name: "Patricia Macapagal"
       },
       {
         role: "Director of Photography",
-        name: "Patrick Jones"
+        name: "Patricia Macapagal"
       },
       {
-        role: "First Assistant Director",
-        name: "Sean Cotany"
+        role: "Assistant Director",
+        name: "Zac Hoffman"
       },
       {
-        role: "Gaffer",
-        name: "David Kruta"
+        role: "First Camera Assistant",
+        name: "Nicholas Tremblay"
       },
       {
-        role: "Keygrip",
-        name: "Khalid Mohtaseb"
+        role: "Camera Operator",
+        name: "George Barrie"
       },
       {
-        role: "Camera",
-        name: "RED Komodo and Canon Lens."
+        role: "Sound Mixer & Boom Operator",
+        name: "Ryan Ding"
+      },
+      {
+        role: "Grip",
+        name: "Kevin Pun"
       },
     ],
     stills: [
@@ -186,34 +277,30 @@ export const films = [
     title: 'Immanuel Part III',
     category: 'short',
     categoryPlural: 'shorts',
-    featured: true,
-    id: 4,
+    featured: false,
+    id: uuidv4(),
     slug: 'immanuuel-part-3',
     embed: 'PPDZ2JGemZk',
     credits: [
       {
         role: "Director",
-        name: "Timur Civan"
+        name: "Dayle De Guzman"
       },
       {
         role: "Director of Photography",
-        name: "Patrick Jones"
+        name: "Jorry Luz"
       },
       {
-        role: "First Assistant Director",
-        name: "Sean Cotany"
+        role: "Producer",
+        name: "OJ Rivera & Monica Cerin"
       },
       {
-        role: "Gaffer",
-        name: "David Kruta"
+        role: "Camera Operator",
+        name: "Tobi Agonias"
       },
       {
-        role: "Keygrip",
-        name: "Khalid Mohtaseb"
-      },
-      {
-        role: "Camera",
-        name: "RED Komodo and Canon Lens."
+        role: "Editor",
+        name: "Patricia Macapagal"
       },
     ],
     stills: [
@@ -247,34 +334,30 @@ export const films = [
     title: 'Immanuel Part II',
     category: 'short',
     categoryPlural: 'shorts',
-    featured: true,
-    id: 5,
+    featured: false,
+    id: uuidv4(),
     slug: 'immanuuel-part-2',
-    embed: 'PPDZ2JGemZk',
+    embed: 'lmQZh_QKzFE',
     credits: [
       {
         role: "Director",
-        name: "Timur Civan"
+        name: "Dayle De Guzman"
       },
       {
         role: "Director of Photography",
-        name: "Patrick Jones"
+        name: "Jorry Luz"
       },
       {
-        role: "First Assistant Director",
-        name: "Sean Cotany"
+        role: "Producer",
+        name: "OJ Rivera & Monica Cerin"
       },
       {
-        role: "Gaffer",
-        name: "David Kruta"
+        role: "Camera Operator",
+        name: "Tobi Agonias"
       },
       {
-        role: "Keygrip",
-        name: "Khalid Mohtaseb"
-      },
-      {
-        role: "Camera",
-        name: "RED Komodo and Canon Lens."
+        role: "Editor",
+        name: "Patricia Macapagal"
       },
     ],
     stills: [
