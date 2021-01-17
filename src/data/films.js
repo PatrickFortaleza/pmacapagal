@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
 
 export const films = [
+  // SHORTS
   {
     title: 'The Midnight Sweethearts',
     category: 'short',
@@ -354,6 +355,155 @@ export const films = [
       {
         role: "Camera Operator",
         name: "Tobi Agonias"
+      },
+      {
+        role: "Editor",
+        name: "Patricia Macapagal"
+      },
+    ],
+    stills: [
+      {
+        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-04.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-04-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-04-hires.png",
+        alt: "Specula still 01"
+      },
+      {
+        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-03.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-03-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-03-hires.png",
+        alt: "Specula still 02"
+      },
+      {
+        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-01.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-01-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-01-hires.png",
+        alt: "Specula still 03"
+      },
+      {
+        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-02.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-02-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-02-hires.png",
+        alt: "Specula still 04"
+      },
+    ]
+  },
+  // DOCUMENTARY
+  {
+    title: 'Solstice – Design for Personal Protective Equipment',
+    category: 'documentary',
+    categoryPlural: 'documentaries',
+    featured: true,
+    id: uuidv4(),
+    slug: 'solstice--design-for-personal-protective-equipment',
+    embed: 'HNnyNTPBZ_E',
+    credits: [
+      {
+        role: "Director",
+        name: "Dayle De Guzman"
+      },
+      {
+        role: "Director of Photography",
+        name: "Patricia Macapagal"
+      },
+      {
+        role: "Producer",
+        name: "Ona Liu"
+      },
+      {
+        role: "Camera Operator",
+        name: "Vicky Huang"
+      },
+      {
+        role: "Editor",
+        name: "Patricia Macapagal"
+      },
+    ],
+    stills: [
+      {
+        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-04.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-04-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-04-hires.png",
+        alt: "Specula still 01"
+      },
+      {
+        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-03.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-03-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-03-hires.png",
+        alt: "Specula still 02"
+      },
+      {
+        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-01.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-01-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-01-hires.png",
+        alt: "Specula still 03"
+      },
+      {
+        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-02.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-02-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-02-hires.png",
+        alt: "Specula still 04"
+      },
+    ]
+  },
+  // PERSONAL
+  {
+    title: 'New York, New York – Concrete Jungle of Dreamers',
+    category: 'personal',
+    categoryPlural: 'personal',
+    featured: false,
+    id: uuidv4(),
+    slug: 'newyork-newyork--concrete-jungle-of-dreamers',
+    embed: 'QmGhK1KwyCU',
+    credits: [
+      {
+        role: "Videographer",
+        name: "Patricia Macapagal"
+      },
+      {
+        role: "Editor",
+        name: "Patricia Macapagal"
+      },
+    ],
+    stills: [
+      {
+        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-04.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-04-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-04-hires.png",
+        alt: "Specula still 01"
+      },
+      {
+        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-03.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-03-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-03-hires.png",
+        alt: "Specula still 02"
+      },
+      {
+        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-01.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-01-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-01-hires.png",
+        alt: "Specula still 03"
+      },
+      {
+        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-02.png",
+        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-02-medres.png",
+        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-02-hires.png",
+        alt: "Specula still 04"
+      },
+    ]
+  },
+  {
+    title: 'Philippines – Coming Home After 11 Years',
+    category: 'personal',
+    categoryPlural: 'personal',
+    featured: false,
+    id: uuidv4(),
+    slug: 'philippines--coming-home-after-11-years',
+    embed: 'J5r2YNQThfg',
+    credits: [
+      {
+        role: "Videographer",
+        name: "Patricia Macapagal"
       },
       {
         role: "Editor",
