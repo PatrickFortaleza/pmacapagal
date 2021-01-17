@@ -213,9 +213,6 @@ import travel16HR from './../images/travel/highres/travel-16.jpg'
 import travel17DR from './../images/travel/travel-17.jpg'
 import travel17HR from './../images/travel/highres/travel-17.jpg'
 
-import travel18DR from './../images/travel/travel-18.jpg'
-import travel18HR from './../images/travel/highres/travel-18.jpg'
-
 
 export const photos = [
   // TRAVEL CATEGORY
@@ -337,13 +334,6 @@ export const photos = [
     category: 'travel',
     url: travel17DR,
     hiResUrl: travel17HR,
-  },
-  { 
-    alt: 'travel-18',
-    id: uuidv4(),
-    category: 'travel',
-    url: travel18DR,
-    hiResUrl: travel18HR,
   },
   // PEOPLE CATEGORY
   {
