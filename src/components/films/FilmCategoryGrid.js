@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import CubePreloader from '../entity/CubePreloader'
 
@@ -10,6 +10,7 @@ export default function FilmCategoryGrid(props) {
   const handleLoad = () => {
     toggleLoad(true)
   }
+
 
   return (
     <div className="FilmCategoryGrid">
@@ -28,12 +29,20 @@ export default function FilmCategoryGrid(props) {
               >
               <Link to={`/filmstudy/${f.slug}`}>
                 <div className="node__wrap">
-                  <img src={f.stills[0].url} alt={f.stills[0].alt} onLoad={ index === films.length - 1 ? handleLoad : undefined}/>
+                  <img height="418" src={f.stills[0].url} alt={f.stills[0].alt} onLoad={ index === films.length - 1 ? handleLoad : undefined}
+                    style={{ minHeight: `223px`}}
+                  />
                   <div className="node__meta">
                     <div className="meta">
                       <p className="meta__title">{f.title}</p>
                       <p className="meta__category">{f.category}</p>
-                      <p>dir. {f.credits.filter(fc => fc.role === `Director`)[0].name}</p>
+                      <p>{
+                          f.credits.filter(fc => fc.role === `Director`)[0] ?
+                          `dir. ${f.credits.filter(fc => fc.role === `Director`)[0].name}` :
+                          `${f.credits[0].role}: ${f.credits[0].name}`
+                         }
+                      
+                      </p>
                     </div>
                   </div>
                 </div>
