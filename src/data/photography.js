@@ -161,6 +161,61 @@ import people19HR from '../images/people/highres/people-19.jpg'
 import people20DR from '../images/people/people-20.jpg'
 import people20HR from '../images/people/highres/people-20.jpg'
 
+// 2.0 TRAVEL ==========================================
+import travel01DR from '../images/travel/travel-1.jpg'
+import travel01HR from '../images/travel/highres/travel-1.jpg'
+
+import travel02DR from '../images/travel/travel-2.jpg'
+import travel02HR from '../images/travel/highres/travel-2.jpg'
+
+import travel03DR from '../images/travel/travel-3.jpg'
+import travel03HR from '../images/travel/highres/travel-3.jpg'
+
+import travel04DR from '../images/travel/travel-4.jpg'
+import travel04HR from '../images/travel/highres/travel-4.jpg'
+
+import travel05DR from '../images/travel/travel-5.jpg'
+import travel05HR from '../images/travel/highres/travel-5.jpg'
+
+import travel06DR from '../images/travel/travel-6.jpg'
+import travel06HR from '../images/travel/highres/travel-6.jpg'
+
+import travel07DR from '../images/travel/travel-7.jpg'
+import travel07HR from '../images/travel/highres/travel-7.jpg'
+
+import travel08DR from '../images/travel/travel-8.jpg'
+import travel08HR from '../images/travel/highres/travel-8.jpg'
+
+import travel09DR from '../images/travel/travel-9.jpg'
+import travel09HR from '../images/travel/highres/travel-9.jpg'
+
+import travel10DR from '../images/travel/travel-10.jpg'
+import travel10HR from '../images/travel/highres/travel-10.jpg'
+
+import travel11DR from '../images/travel/travel-11.jpg'
+import travel11HR from '../images/travel/highres/travel-11.jpg'
+
+import travel12DR from '../images/travel/travel-12.jpg'
+import travel12HR from '../images/travel/highres/travel-12.jpg'
+
+import travel13DR from '../images/travel/travel-13.jpg'
+import travel13HR from '../images/travel/highres/travel-13.jpg'
+
+import travel14DR from '../images/travel/travel-14.jpg'
+import travel14HR from '../images/travel/highres/travel-14.jpg'
+
+import travel15DR from '../images/travel/travel-15.jpg'
+import travel15HR from '../images/travel/highres/travel-15.jpg'
+
+import travel16DR from '../images/travel/travel-16.jpg'
+import travel16HR from '../images/travel/highres/travel-16.jpg'
+
+import travel17DR from '../images/travel/travel-17.jpg'
+import travel17HR from '../images/travel/highres/travel-17.jpg'
+
+import travel18DR from '../images/travel/travel-18.jpg'
+import travel18HR from '../images/travel/highres/travel-18.jpg'
+
 
 export const photos = [
   // TRAVEL CATEGORY
@@ -168,57 +223,127 @@ export const photos = [
     alt: 'travel-01',
     id: uuidv4(),
     category: 'travel',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-01.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-01.png',
+    url: travel01DR,
+    hiResUrl: travel01HR,
   },
-  {
+  { 
     alt: 'travel-02',
     id: uuidv4(),
     category: 'travel',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-03.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-03.png',
+    url: travel05DR,
+    hiResUrl: travel05HR,
   },
-  {
+  { 
     alt: 'travel-03',
     id: uuidv4(),
     category: 'travel',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-02.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-02.png',
+    url: travel02DR,
+    hiResUrl: travel02HR,
   },
-  {
+  { 
     alt: 'travel-04',
     id: uuidv4(),
     category: 'travel',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-04.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-04.png',
+    url: travel06DR,
+    hiResUrl: travel06HR,
   },
-  {
+  { 
     alt: 'travel-05',
     id: uuidv4(),
     category: 'travel',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-05.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-05.png',
+    url: travel03DR,
+    hiResUrl: travel03HR,
   },
-  {
+  { 
     alt: 'travel-06',
     id: uuidv4(),
     category: 'travel',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-06.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-06.png',
+    url: travel09DR,
+    hiResUrl: travel09HR,
   },
-  {
+  { 
     alt: 'travel-07',
     id: uuidv4(),
     category: 'travel',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-08.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-08.png',
+    url: travel04DR,
+    hiResUrl: travel04HR,
   },
-  {
+  { 
     alt: 'travel-08',
     id: uuidv4(),
     category: 'travel',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-07.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/travel-07.png',
+    url: travel10DR,
+    hiResUrl: travel10HR,
+  },
+  { 
+    alt: 'travel-09',
+    id: uuidv4(),
+    category: 'travel',
+    url: travel07DR,
+    hiResUrl: travel07HR,
+  },
+  { 
+    alt: 'travel-10',
+    id: uuidv4(),
+    category: 'travel',
+    url: travel11DR,
+    hiResUrl: travel11HR,
+  },
+  { 
+    alt: 'travel-11',
+    id: uuidv4(),
+    category: 'travel',
+    url: travel08DR,
+    hiResUrl: travel08HR,
+  },
+  { 
+    alt: 'travel-12',
+    id: uuidv4(),
+    category: 'travel',
+    url: travel12DR,
+    hiResUrl: travel12HR,
+  },
+  { 
+    alt: 'travel-13',
+    id: uuidv4(),
+    category: 'travel',
+    url: travel13DR,
+    hiResUrl: travel13HR,
+  },
+  { 
+    alt: 'travel-14',
+    id: uuidv4(),
+    category: 'travel',
+    url: travel14DR,
+    hiResUrl: travel14HR,
+  },
+  { 
+    alt: 'travel-15',
+    id: uuidv4(),
+    category: 'travel',
+    url: travel15DR,
+    hiResUrl: travel15HR,
+  },
+  { 
+    alt: 'travel-16',
+    id: uuidv4(),
+    category: 'travel',
+    url: travel16DR,
+    hiResUrl: travel16HR,
+  },
+  { 
+    alt: 'travel-17',
+    id: uuidv4(),
+    category: 'travel',
+    url: travel17DR,
+    hiResUrl: travel17HR,
+  },
+  { 
+    alt: 'travel-18',
+    id: uuidv4(),
+    category: 'travel',
+    url: travel18DR,
+    hiResUrl: travel18HR,
   },
   // PEOPLE CATEGORY
   {
@@ -585,49 +710,6 @@ export const photos = [
     category: 'concerts',
     url: concerts24DR,
     hiResUrl: concerts24HR,
-  },
-  // CLIENTS CATEGORY
-  {
-    alt: 'clients-06',
-    id: uuidv4(),
-    category: 'clients',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-06.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-06.png',
-  },
-  {
-    alt: 'clients-01',
-    id: uuidv4(),
-    category: 'clients',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-01.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-01.png',
-  },
-  {
-    alt: 'clients-04',
-    id: uuidv4(),
-    category: 'clients',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-04.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-04.png',
-  },
-  {
-    alt: 'clients-02',
-    id: uuidv4(),
-    category: 'clients',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-02.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-02.png',
-  },
-  {
-    alt: 'clients-04',
-    id: uuidv4(),
-    category: 'clients',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-07.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-07.png',
-  },
-  {
-    alt: 'clients-03',
-    id: uuidv4(),
-    category: 'clients',
-    url: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-03.png',
-    hiResUrl: 'https://pmacapagal-assets.s3-us-west-2.amazonaws.com/photography/clients-03.png',
   },
 ]
 
