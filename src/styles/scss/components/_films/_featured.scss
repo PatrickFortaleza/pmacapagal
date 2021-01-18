@@ -36,7 +36,15 @@
       object-fit: cover;
       object-position: center center;
       transition: .2s ease-in-out;
-      min-height: 190px;
+      min-height: 208px;
+
+      @media screen and (min-width: 767px){
+        min-height: 190px;
+      }
+
+      @media screen and (min-width: 1200px){
+        min-height: 230px;
+      }
 
       &:hover,
       &:focus {
