@@ -100,7 +100,9 @@ import concerts31HR from './../images/concert/highres/concert-31.jpg'
 import concerts32DR from './../images/concert/concert-32.jpg'
 import concerts32HR from './../images/concert/highres/concert-32.jpg'
 
-// 2.0 PEOPLE ==========================================
+// IMAGE IMPORTS
+// =======================================================
+// 2.0 PEOPLE ============================================
 import people01DR from './../images/people/people-1.jpg'
 import people01HR from './../images/people/highres/people-1.jpg'
 
@@ -161,7 +163,9 @@ import people19HR from './../images/people/highres/people-19.jpg'
 import people20DR from './../images/people/people-20.jpg'
 import people20HR from './../images/people/highres/people-20.jpg'
 
-// 2.0 TRAVEL ==========================================
+// IMAGE IMPORTS
+// =======================================================
+// 2.0 TRAVEL ============================================
 import travel01DR from './../images/travel/travel-1.jpg'
 import travel01HR from './../images/travel/highres/travel-1.jpg'
 
