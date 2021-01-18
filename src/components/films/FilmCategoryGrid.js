@@ -1,15 +1,25 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import CubePreloader from '../entity/CubePreloader'
+import {
+  withRouter
+} from "react-router-dom";
 
-export default function FilmCategoryGrid(props) {
+export default withRouter(function FilmCategoryGrid(props) {
   const [loaded, toggleLoad] = useState(() => { return null })
-  const { films } = props
-  const baseDelay = 0.125
+  const { films, location } = props
+  const { pathname } = location 
+  const baseDelay = 0.25
 
   const handleLoad = () => {
-    toggleLoad(true)
+    setTimeout(() => {
+      toggleLoad(true)
+    }, 500)
   }
+
+  useEffect(() => {
+    toggleLoad(false)
+  }, [pathname])
 
 
   return (
@@ -54,4 +64,4 @@ export default function FilmCategoryGrid(props) {
       </ul>
     </div>
   )
-}
+})
