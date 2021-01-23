@@ -89,6 +89,23 @@ import immanuelPart03_02HR from '../stills/shorts/immanuel-part-3/immanuel-part-
 import immanuelPart03_03HR from '../stills/shorts/immanuel-part-3/immanuel-part-3-03-hires.png'
 import immanuelPart03_04HR from '../stills/shorts/immanuel-part-3/immanuel-part-3-04-hires.png'
 
+// IMMANUEL PART 3
+// ======================================================
+import immanuelPart02_01DR from '../stills/shorts/immanuel-part-2/immanuel-part-2-01-defres.png'
+import immanuelPart02_02DR from '../stills/shorts/immanuel-part-2/immanuel-part-2-02-defres.png'
+import immanuelPart02_03DR from '../stills/shorts/immanuel-part-2/immanuel-part-2-03-defres.png'
+import immanuelPart02_04DR from '../stills/shorts/immanuel-part-2/immanuel-part-2-04-defres.png'
+
+import immanuelPart02_01MR from '../stills/shorts/immanuel-part-2/immanuel-part-2-01-medres.png'
+import immanuelPart02_02MR from '../stills/shorts/immanuel-part-2/immanuel-part-2-02-medres.png'
+import immanuelPart02_03MR from '../stills/shorts/immanuel-part-2/immanuel-part-2-03-medres.png'
+import immanuelPart02_04MR from '../stills/shorts/immanuel-part-2/immanuel-part-2-04-medres.png'
+
+import immanuelPart02_01HR from '../stills/shorts/immanuel-part-2/immanuel-part-2-01-hires.png'
+import immanuelPart02_02HR from '../stills/shorts/immanuel-part-2/immanuel-part-2-02-hires.png'
+import immanuelPart02_03HR from '../stills/shorts/immanuel-part-2/immanuel-part-2-03-hires.png'
+import immanuelPart02_04HR from '../stills/shorts/immanuel-part-2/immanuel-part-2-04-hires.png'
+
 
 // 2.0 DOCUMENTARIES ===========================================
 
@@ -108,6 +125,45 @@ import solstice_01HR from '../stills/documentaries/solstice/solstice-01-hires.pn
 import solstice_02HR from '../stills/documentaries/solstice/solstice-02-hires.png'
 import solstice_03HR from '../stills/documentaries/solstice/solstice-03-hires.png'
 import solstice_04HR from '../stills/documentaries/solstice/solstice-04-hires.png'
+
+
+// 3.0 PERSONAL ===========================================
+
+
+// NEWYORK, NEWYORK
+// ======================================================
+import newYorknewYork_01DR from '../stills/personal/newyork-newyork/newyork-newyork-01-defres.png'
+import newYorknewYork_02DR from '../stills/personal/newyork-newyork/newyork-newyork-02-defres.png'
+import newYorknewYork_03DR from '../stills/personal/newyork-newyork/newyork-newyork-03-defres.png'
+import newYorknewYork_04DR from '../stills/personal/newyork-newyork/newyork-newyork-04-defres.png'
+
+import newYorknewYork_01MR from '../stills/personal/newyork-newyork/newyork-newyork-01-medres.png'
+import newYorknewYork_02MR from '../stills/personal/newyork-newyork/newyork-newyork-02-medres.png'
+import newYorknewYork_03MR from '../stills/personal/newyork-newyork/newyork-newyork-03-medres.png'
+import newYorknewYork_04MR from '../stills/personal/newyork-newyork/newyork-newyork-04-medres.png'
+
+import newYorknewYork_01HR from '../stills/personal/newyork-newyork/newyork-newyork-01-hires.png'
+import newYorknewYork_02HR from '../stills/personal/newyork-newyork/newyork-newyork-02-hires.png'
+import newYorknewYork_03HR from '../stills/personal/newyork-newyork/newyork-newyork-03-hires.png'
+import newYorknewYork_04HR from '../stills/personal/newyork-newyork/newyork-newyork-04-hires.png'
+
+// PHILIPPINES 11
+// ======================================================
+import philippines11_01DR from '../stills/personal/philippines-11/philippines-11-01-defres.png'
+import philippines11_02DR from '../stills/personal/philippines-11/philippines-11-02-defres.png'
+import philippines11_03DR from '../stills/personal/philippines-11/philippines-11-03-defres.png'
+import philippines11_04DR from '../stills/personal/philippines-11/philippines-11-04-defres.png'
+
+import philippines11_01MR from '../stills/personal/philippines-11/philippines-11-01-medres.png'
+import philippines11_02MR from '../stills/personal/philippines-11/philippines-11-02-medres.png'
+import philippines11_03MR from '../stills/personal/philippines-11/philippines-11-03-medres.png'
+import philippines11_04MR from '../stills/personal/philippines-11/philippines-11-04-medres.png'
+
+import philippines11_01HR from '../stills/personal/philippines-11/philippines-11-01-hires.png'
+import philippines11_02HR from '../stills/personal/philippines-11/philippines-11-02-hires.png'
+import philippines11_03HR from '../stills/personal/philippines-11/philippines-11-03-hires.png'
+import philippines11_04HR from '../stills/personal/philippines-11/philippines-11-04-hires.png'
+
 
 
 export const films = [
@@ -473,27 +529,27 @@ export const films = [
     ],
     stills: [
       {
-        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-04.png",
-        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-04-medres.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-04-hires.png",
+        url: immanuelPart02_01DR,
+        medResUrl: immanuelPart02_01MR,
+        hiResUrl: immanuelPart02_01HR,
         alt: "Immanuel part 2 still 01"
       },
       {
-        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-03.png",
-        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-03-medres.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-03-hires.png",
+        url: immanuelPart02_02DR,
+        medResUrl: immanuelPart02_02MR,
+        hiResUrl: immanuelPart02_02HR,
         alt: "Immanuel part 2 still 02"
       },
       {
-        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-01.png",
-        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-01-medres.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-01-hires.png",
+        url: immanuelPart02_03DR,
+        medResUrl: immanuelPart02_03MR,
+        hiResUrl: immanuelPart02_03HR,
         alt: "Immanuel part 2 still 03"
       },
       {
-        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-02.png",
-        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-02-medres.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-02-hires.png",
+        url: immanuelPart02_04DR,
+        medResUrl: immanuelPart02_04MR,
+        hiResUrl: immanuelPart02_04HR,
         alt: "Immanuel part 2 still 04"
       },
     ]
@@ -577,28 +633,28 @@ export const films = [
     ],
     stills: [
       {
-        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-04.png",
-        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-04-medres.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-04-hires.png",
-        alt: "Specula still 01"
+        url: newYorknewYork_01DR,
+        medResUrl: newYorknewYork_01MR,
+        hiResUrl: newYorknewYork_01HR,
+        alt: "New York, New York still 01"
       },
       {
-        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-03.png",
-        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-03-medres.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-03-hires.png",
-        alt: "Specula still 02"
+        url: newYorknewYork_02DR,
+        medResUrl: newYorknewYork_02MR,
+        hiResUrl: newYorknewYork_02HR,
+        alt: "New York, New York still 02"
       },
       {
-        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-01.png",
-        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-01-medres.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-01-hires.png",
-        alt: "Specula still 03"
+        url: newYorknewYork_03DR,
+        medResUrl: newYorknewYork_03MR,
+        hiResUrl: newYorknewYork_03HR,
+        alt: "New York, New York still 03"
       },
       {
-        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-02.png",
-        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-02-medres.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/immanuelpart3-02-hires.png",
-        alt: "Specula still 04"
+        url: newYorknewYork_04DR,
+        medResUrl: newYorknewYork_04MR,
+        hiResUrl: newYorknewYork_04HR,
+        alt: "New York, New York still 04"
       },
     ]
   },
@@ -622,28 +678,28 @@ export const films = [
     ],
     stills: [
       {
-        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-04.png",
-        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-04-medres.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-04-hires.png",
-        alt: "Specula still 01"
+        url: philippines11_01DR,
+        medResUrl: philippines11_01MR,
+        hiResUrl: philippines11_01HR,
+        alt: "Philippines still 01"
       },
       {
-        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-03.png",
-        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-03-medres.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-03-hires.png",
-        alt: "Specula still 02"
+        url: philippines11_02DR,
+        medResUrl: philippines11_02MR,
+        hiResUrl: philippines11_02HR,
+        alt: "Philippines still 02"
       },
       {
-        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-01.png",
-        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-01-medres.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-01-hires.png",
-        alt: "Specula still 03"
+        url: philippines11_03DR,
+        medResUrl: philippines11_03MR,
+        hiResUrl: philippines11_03HR,
+        alt: "Philippines still 03"
       },
       {
-        url: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-02.png",
-        medResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-02-medres.png",
-        hiResUrl: "https://pmacapagal-assets.s3-us-west-2.amazonaws.com/specula-02-hires.png",
-        alt: "Specula still 04"
+        url: philippines11_04DR,
+        medResUrl: philippines11_04MR,
+        hiResUrl: philippines11_04HR,
+        alt: "Philippines still 04"
       },
     ]
   },
