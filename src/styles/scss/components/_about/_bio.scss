@@ -11,6 +11,14 @@
     width: 100%;
     margin-bottom: 10px;
     float: left;
+    opacity: 0;
+    transform: translateY(25px);
+    transition: all .2s ease-in-out .25s; 
+
+    &.animated {
+      opacity: 1;
+      transform: translateY(0px);
+    }
     
     @media screen and (min-width: 767px) {
       width: calc(40% - 30px);
@@ -31,10 +39,30 @@
     @media screen and (min-width: 767px) {
       font-size: 17px;
     }
+    
+
+    p {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: all .2s ease-in-out .35s; 
+    }
+
+    &.animated p {
+      opacity: 1;
+      transform: translateY(0px);
+    }
   }
 
   .SocialNav {
     margin-top: 60px;
+    opacity: 0;
+    transform: translateY(25px);
+    transition: all .2s ease-in-out .45s; 
+  }
+
+  span.animated .SocialNav {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 
@@ -79,7 +107,7 @@
     display: block !important;
   }
 
-  img, li, p {
-    opacity: 1 !important;
-  }
+  // img, li, p {
+  //   opacity: 1 !important;
+  // }
 }

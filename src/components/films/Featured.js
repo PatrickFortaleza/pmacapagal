@@ -47,7 +47,7 @@ export default function Featured(props) {
                   key={index}
                   ref={img}
                   style={{
-                    transition: `opacity .2s ease-in-out ${((index + 1) * 0.125) + baseDelay}s`,
+                    transition: `all .2s ease-in-out ${((index + 1) * 0.125) + baseDelay}s`,
                     width: `${imgHeight * 2.23}px`
                   }}
                 >
