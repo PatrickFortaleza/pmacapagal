@@ -22,6 +22,11 @@ export default withRouter(function FilmCategoryGrid(props) {
   }, [pathname])
 
 
+  useEffect(() => {
+    return (() => toggleLoad(false) )
+  }, [])
+
+
   return (
     <div className="FilmCategoryGrid">
       {

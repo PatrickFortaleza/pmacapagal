@@ -61,8 +61,13 @@ export default function Works() {
     toggleLoad(bool => bool = true)
   }
 
+  const handleLoadOff = () => {
+    toggleLoad(bool => bool = false)
+  }
+
   useEffect(() => {
     handleLoad()
+    return (() => handleLoadOff )
   }, []) 
 
   return (
