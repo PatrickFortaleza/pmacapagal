@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { photos } from '../../data/photography'
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
+import CubePreloader from '../entity/CubePreloader'
 import SmartImage from './SmartImage'
 
 export default function MasonryGrid({currentTab}) {
@@ -15,6 +16,12 @@ export default function MasonryGrid({currentTab}) {
   
   return (
     <div className={`MasonryGrid ${currentTab}`}>
+      {
+        loaded ?
+          null
+        :
+          <CubePreloader />
+      }
         <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}>
           <Masonry >
             {
@@ -24,7 +31,7 @@ export default function MasonryGrid({currentTab}) {
                     key={index} 
                     p={p} 
                     currentTab={currentTab}
-                    loadNotifier={index === photos.length - 1 ? incrementLoadCounter : undefined}
+                    loadNotifier={index === 0 ? incrementLoadCounter : undefined}
                   />
                 )
               })
