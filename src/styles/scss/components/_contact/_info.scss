@@ -1,0 +1,43 @@
+ .Info {
+   margin-top: 40px;
+
+
+   .Info__list li {
+     display: flex;
+     margin-bottom: 50px;
+
+     @media screen and (max-width: 350px){
+       flex-direction: column;
+     }
+
+     .col {
+       margin-right: 25px;
+       min-width: 110px;
+
+       @media screen and (min-width: 500px) {
+        margin-right: 100px;
+       }
+
+       @media screen and (min-width: 767px) {
+        margin-right: 200px;
+       }
+
+       p,a {
+         color: $offgrey;
+       }
+     }
+
+     & .col:last-child {
+       margin-right: 0;
+
+       a {
+         color: $white;
+       }
+     }
+   }
+
+   p {
+     text-align: left;
+     line-height: 1.7em;
+   }
+ }
