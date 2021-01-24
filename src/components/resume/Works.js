@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import PageTitle from '../global/PageTitle'
 import { Link } from 'react-router-dom';
 
-export default function Resume_() {
+export default function Works() {
   const [loaded, toggleLoad] = useState(() => { return false })
   const works = [
     {
