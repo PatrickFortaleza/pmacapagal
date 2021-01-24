@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { films } from '../../data/films'
 
 export default function Featured() {
-  const [loaded, toggleLoad] = useState(() => { return false })
+  const [loaded, toggleLoad] = useState(() => { return false }) 
   const featuredFilms = films.filter( f => { return f.featured === true } ).slice(0,3)
   const baseDelay = 0.125
   const filmRow = useRef()
