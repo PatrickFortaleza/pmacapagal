@@ -566,7 +566,7 @@ export const films = [
     credits: [
       {
         role: "Director",
-        name: "Dayle De Guzman"
+        name: "Patricia Macapagal"
       },
       {
         role: "Director of Photography",
