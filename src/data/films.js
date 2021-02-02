@@ -678,6 +678,12 @@ export const films = [
     ],
     stills: [
       {
+        url: philippines11_04DR,
+        medResUrl: philippines11_04MR,
+        hiResUrl: philippines11_04HR,
+        alt: "Philippines still 04"
+      },
+      {
         url: philippines11_01DR,
         medResUrl: philippines11_01MR,
         hiResUrl: philippines11_01HR,
@@ -694,13 +700,7 @@ export const films = [
         medResUrl: philippines11_03MR,
         hiResUrl: philippines11_03HR,
         alt: "Philippines still 03"
-      },
-      {
-        url: philippines11_04DR,
-        medResUrl: philippines11_04MR,
-        hiResUrl: philippines11_04HR,
-        alt: "Philippines still 04"
-      },
+      }
     ]
   },
 ]

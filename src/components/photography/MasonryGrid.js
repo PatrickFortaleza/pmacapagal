@@ -22,7 +22,7 @@ export default function MasonryGrid({currentTab}) {
         :
           <CubePreloader />
       }
-        <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}>
+        <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 900: 3, 1140: 5}}>
           <Masonry >
             {
               photos.map((p, index) => {
