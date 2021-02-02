@@ -18,12 +18,12 @@ export default function Tabs(props) {
       <form className="tabset" onChange={(e) => handleFormChanged(e)}>
         <input type="radio" name="tabset" id="tab1" value="all" defaultChecked/>
         <label htmlFor="tab1">ALL</label>
-        <input type="radio" name="tabset" id="tab4" value="travel"/>
-        <label htmlFor="tab4">TRAVEL</label>
-        <input type="radio" name="tabset" id="tab5" value="people" />
-        <label htmlFor="tab5">PEOPLE</label>
         <input type="radio" name="tabset" id="tab2" value="concerts"/>
         <label htmlFor="tab2">CONCERTS</label>
+        <input type="radio" name="tabset" id="tab5" value="people" />
+        <label htmlFor="tab5">PEOPLE</label>
+        <input type="radio" name="tabset" id="tab4" value="travel"/>
+        <label htmlFor="tab4">TRAVEL</label>
       </form>
       <div className="tab-panel"></div>
     </div>
